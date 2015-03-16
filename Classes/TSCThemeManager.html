@@ -1,373 +1,518 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>TSCThemeManager Class Reference</title>
-		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
-		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.2 (build 963)" />
-	</head>
-	<body>
-		<header id="top_header">
-			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">ThunderTable </a></h1>
-				<a id="developerHome" href="../index.html">3 SIDED CUBE DESIGN LTD</a>
-			</div>
+<head>
+	<meta charset="utf-8">
+
+	<title>TSCThemeManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
 			
-			<div id="title" role="banner">
-				<h1 class="hideInXcode">TSCThemeManager Class Reference</h1>
-			</div>
-			<ul id="headerButtons" role="toolbar">
-				<li id="toc_button">
-					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
-				</li>
-				<li id="jumpto_button" role="navigation">
-					<select id="jumpTo">
+			<h1 id="library-title">
+				<a href="../index.html">ThunderTable </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">3 SIDED CUBE DESIGN LTD.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
 	
+
 	
 	
 	<option value="tasks">Tasks</option>
 	
 	
+
 	
 	
+
 	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/customizeAppAppearance">+ customizeAppAppearance</option>
+		
+		<option value="//api/name/isOS7">+ isOS7</option>
+		
+		<option value="//api/name/isOS8">+ isOS8</option>
+		
+		<option value="//api/name/isRightToLeft">+ isRightToLeft</option>
+		
+		<option value="//api/name/localisedTextDirectionForBaseDirection:">+ localisedTextDirectionForBaseDirection:</option>
+		
+		<option value="//api/name/setSharedTheme:">+ setSharedTheme:</option>
+		
+		<option value="//api/name/sharedTheme">+ sharedTheme</option>
+		
+	</optgroup>
 	
-	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/customizeAppAppearance">&nbsp;&nbsp;&nbsp;&nbsp;+ customizeAppAppearance</option>
-	
-	<option value="//api/name/isOS7">&nbsp;&nbsp;&nbsp;&nbsp;+ isOS7</option>
-	
-	<option value="//api/name/isRightToLeft">&nbsp;&nbsp;&nbsp;&nbsp;+ isRightToLeft</option>
-	
-	<option value="//api/name/localisedTextDirectionForBaseDirection:">&nbsp;&nbsp;&nbsp;&nbsp;+ localisedTextDirectionForBaseDirection:</option>
-	
-	<option value="//api/name/setSharedTheme:">&nbsp;&nbsp;&nbsp;&nbsp;+ setSharedTheme:</option>
-	
-	<option value="//api/name/sharedTheme">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedTheme</option>
-	
-	
-	
+
 	
 	
 </select>
-				</li>
-			</ul>
-		</header>
-		<nav id="tocContainer" class="isShowingTOC">
-			<ul id="toc" role="tree">
-				
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
 
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TSCThemeManager Class Reference</h1>
 
-
-<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
-	
-</ul></li>
-
-
-
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/customizeAppAppearance">customizeAppAppearance</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isOS7">isOS7</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isRightToLeft">isRightToLeft</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/localisedTextDirectionForBaseDirection:">localisedTextDirectionForBaseDirection:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSharedTheme:">setSharedTheme:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedTheme">sharedTheme</a></span></li>
-	
-</ul></li>
-
-
-
-
-			</ul>
-		</nav>
-		<article>
-			<div id="contents" class="isShowingTOC" role="main">
-				<a title="TSCThemeManager Class Reference" name="top"></a>
-				<div class="main-navigation navigation-top">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="header">
-					<div class="section-header">
-						<h1 class="title title-header">TSCThemeManager Class Reference</h1>
-					</div>		
-				</div>
-				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
+	<th>Inherits from</th>
+	<td>NSObject</td>
 </tr><tr>
-	<td class="specification-title">Declared in</td>
-	<td class="specification-value">TSCThemeManager.h</td>
+	<th>Declared in</th>
+	<td>TSCThemeManager.h<br />TSCThemeManager.m</td>
 </tr>
 						</tbody></table></div>
 					
-                    
+
                     
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A controller instance for theming of an app</p>
+					</div>
+					
+					
+
 					
 					
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
-						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
-						
+
 						
 						
 
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/sharedTheme">+&nbsp;sharedTheme</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setSharedTheme:">+&nbsp;setSharedTheme:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/isOS7">+&nbsp;isOS7</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/isRightToLeft">+&nbsp;isRightToLeft</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/localisedTextDirectionForBaseDirection:">+&nbsp;localisedTextDirectionForBaseDirection:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/customizeAppAppearance">+&nbsp;customizeAppAppearance</a></code>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-					</div>
-					
-					
-					
-					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/customizeAppAppearance" title="customizeAppAppearance"></a>
-	<h3 class="subsubtitle method-title">customizeAppAppearance</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (void)customizeAppAppearance</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/isOS7" title="isOS7"></a>
-	<h3 class="subsubtitle method-title">isOS7</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (BOOL)isOS7</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/isRightToLeft" title="isRightToLeft"></a>
-	<h3 class="subsubtitle method-title">isRightToLeft</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (BOOL)isRightToLeft</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/localisedTextDirectionForBaseDirection:" title="localisedTextDirectionForBaseDirection:"></a>
-	<h3 class="subsubtitle method-title">localisedTextDirectionForBaseDirection:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (NSTextAlignment)localisedTextDirectionForBaseDirection:(NSTextAlignment)<em>textDirection</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/setSharedTheme:" title="setSharedTheme:"></a>
-	<h3 class="subsubtitle method-title">setSharedTheme:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (void)setSharedTheme:(id&lt;TSCTheme&gt;)<em>theme</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/sharedTheme" title="sharedTheme"></a>
-	<h3 class="subsubtitle method-title">sharedTheme</h3>
-	
-	
+	<h3 class="method-title"><code><a href="#//api/name/sharedTheme">+&nbsp;sharedTheme</a></code>
+</h3>
 
-	<div class="method-subsection method-declaration"><code>+ (id&lt;TSCTheme&gt;)sharedTheme</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-</div>
-						
-					</div>
-					
-					
-					
-					
-                    
-                    
-				</div>
-				<div class="main-navigation navigation-bottom">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="footer">
-					<hr />
-					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 3 SIDED CUBE DESIGN LTD. All rights reserved. (Last updated: 2014-11-11)</span><br />
-						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
-						
-					</div>
-				</div>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A shared instance of the theme to be used by the app.</p>
 			</div>
-		</article>
-		<script type="text/javascript">
-			function jumpToChange()
-			{
-				window.location.hash = this.options[this.selectedIndex].value;
-			}
 			
-			function toggleTOC()
-			{
-				var contents = document.getElementById('contents');
-				var tocContainer = document.getElementById('tocContainer');
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;TSCTheme&gt;)sharedTheme</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An NSObject that conforms to the <a href="../Protocols/TSCTheme.html">TSCTheme</a> protocol</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A shared instance of the theme to be used by the app.</p><p>This can be set using <a href="#//api/name/setSharedTheme:"><code>setSharedTheme:</code></a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCThemeManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSharedTheme:" title="setSharedTheme:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSharedTheme:">+&nbsp;setSharedTheme:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to set the shared theme for the app. Accessing the shared theme in future will return the object returned here</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setSharedTheme:(id&lt;TSCTheme&gt;)<em>theme</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
 				
-				if (this.getAttribute('class') == 'open')
-				{
-					this.setAttribute('class', '');
-					contents.setAttribute('class', '');
-					tocContainer.setAttribute('class', '');
+					<tr>
+						<th scope="row" class="argument-name"><code>theme</code></th>
+						<td><p>The new shared theme to be used</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Use this method to set the shared theme for the app. Accessing the shared theme in future will return the object returned here</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCThemeManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isOS7" title="isOS7"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isOS7">+&nbsp;isOS7</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Can be used to identify if the device is running at least iOS 7</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isOS7</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A boolean indicating whether the current device is running a version of iOS 7</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Can be used to identify if the device is running at least iOS 7</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCThemeManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isOS8" title="isOS8"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isOS8">+&nbsp;isOS8</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Can be used to identify if the device is running at least iOS 8</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isOS8</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A boolean indicating whether the current device is running a version of iOS 8</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Can be used to identify if the device is running at least iOS 8</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCThemeManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isRightToLeft" title="isRightToLeft"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isRightToLeft">+&nbsp;isRightToLeft</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Detects if the language of the device is a right to left character set</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isRightToLeft</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>BOOL of whether or not the language is right to left</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Detects if the language of the device is a right to left character set</p><div class="warning"><p><strong>Warning:</strong> This method is deprecated and will always return NO</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCThemeManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/localisedTextDirectionForBaseDirection:" title="localisedTextDirectionForBaseDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localisedTextDirectionForBaseDirection:">+&nbsp;localisedTextDirectionForBaseDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Converts a given text direction to its localised format.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSTextAlignment)localisedTextDirectionForBaseDirection:(NSTextAlignment)<em>textDirection</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>textDirection</code></th>
+						<td><p>The text direction to return the localised text direction for</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Converts a given text direction to its localised format.</p><p>Used for supporting right to left languages. For example passing NSTextAlignmentLeft when the language is right to left will return NSTextAlignmentRight</p><div class="warning"><p><strong>Warning:</strong> This method is deprecated and will always return the given direction now.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCThemeManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/customizeAppAppearance" title="customizeAppAppearance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/customizeAppAppearance">+&nbsp;customizeAppAppearance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Applies the shared theme to the app</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)customizeAppAppearance</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Applies the shared theme to the app</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCThemeManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
 					
-					window.name = "hideTOC";
-				}
-				else
-				{
-					this.setAttribute('class', 'open');
-					contents.setAttribute('class', 'isShowingTOC');
-					tocContainer.setAttribute('class', 'isShowingTOC');
 					
-					window.name = "";
-				}
-				return false;
-			}
-			
-			function toggleTOCEntryChildren(e)
-			{
-				e.stopPropagation();
-				var currentClass = this.getAttribute('class');
-				if (currentClass == 'children') {
-					this.setAttribute('class', 'children open');
-				}
-				else if (currentClass == 'children open') {
-					this.setAttribute('class', 'children');
-				}
-				return false;
-			}
-			
-			function tocEntryClick(e)
-			{
-				e.stopPropagation();
-				return true;
-			}
-			
-			function init()
-			{
-				var selectElement = document.getElementById('jumpTo');
-				selectElement.addEventListener('change', jumpToChange, false);
-				
-				var tocButton = document.getElementById('table_of_contents');
-				tocButton.addEventListener('click', toggleTOC, false);
-				
-				var taskTreeItem = document.getElementById('task_treeitem');
-				if (taskTreeItem.getElementsByTagName('li').length > 0)
-				{
-					taskTreeItem.setAttribute('class', 'children');
-					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
-				}
-				
-				var tocList = document.getElementById('toc');
-				
-				var tocEntries = tocList.getElementsByTagName('li');
-				for (var i = 0; i < tocEntries.length; i++) {
-					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
-				}
-				
-				var tocLinks = tocList.getElementsByTagName('a');
-				for (var i = 0; i < tocLinks.length; i++) {
-					tocLinks[i].addEventListener('click', tocEntryClick, false);
-				}
-				
-				if (window.name == "hideTOC") {
-					toggleTOC.call(tocButton);
-				}
-			}
-			
-			window.onload = init;
-			
-			// If showing in Xcode, hide the TOC and Header
-			if (navigator.userAgent.match(/xcode/i)) {
-				document.getElementById("contents").className = "hideInXcode"
-				document.getElementById("tocContainer").className = "hideInXcode"
-				document.getElementById("top_header").className = "hideInXcode"
-			}
-			
-		</script>
-	</body>
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 3 SIDED CUBE DESIGN LTD. All rights reserved. Updated: 2015-03-16</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
 </html>

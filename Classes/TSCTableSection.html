@@ -1,148 +1,129 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>TSCTableSection Class Reference</title>
-		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
-		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.2 (build 963)" />
-	</head>
-	<body>
-		<header id="top_header">
-			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">ThunderTable </a></h1>
-				<a id="developerHome" href="../index.html">3 SIDED CUBE DESIGN LTD</a>
-			</div>
+<head>
+	<meta charset="utf-8">
+
+	<title>TSCTableSection Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
 			
-			<div id="title" role="banner">
-				<h1 class="hideInXcode">TSCTableSection Class Reference</h1>
-			</div>
-			<ul id="headerButtons" role="toolbar">
-				<li id="toc_button">
-					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
-				</li>
-				<li id="jumpto_button" role="navigation">
-					<select id="jumpTo">
+			<h1 id="library-title">
+				<a href="../index.html">ThunderTable </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">3 SIDED CUBE DESIGN LTD.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
 	<option value="overview">Overview</option>
 	
-	
+
 	
 	
 	<option value="tasks">Tasks</option>
 	
 	
+
 	
 	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/footer">footer</option>
+		
+		<option value="//api/name/items">items</option>
+		
+		<option value="//api/name/selector">selector</option>
+		
+		<option value="//api/name/target">target</option>
+		
+		<option value="//api/name/title">title</option>
+		
+	</optgroup>
 	
-	<option value="properties">Properties</option>
+
 	
-	<option value="//api/name/footer">&nbsp;&nbsp;&nbsp;&nbsp;footer</option>
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sectionWithItems:">+ sectionWithItems:</option>
+		
+		<option value="//api/name/sectionWithTitle:footer:items:target:selector:">+ sectionWithTitle:footer:items:target:selector:</option>
+		
+	</optgroup>
 	
-	<option value="//api/name/items">&nbsp;&nbsp;&nbsp;&nbsp;items</option>
+
 	
-	<option value="//api/name/selector">&nbsp;&nbsp;&nbsp;&nbsp;selector</option>
-	
-	<option value="//api/name/target">&nbsp;&nbsp;&nbsp;&nbsp;target</option>
-	
-	<option value="//api/name/title">&nbsp;&nbsp;&nbsp;&nbsp;title</option>
-	
-	
-	
-	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/sectionWithItems:">&nbsp;&nbsp;&nbsp;&nbsp;+ sectionWithItems:</option>
-	
-	<option value="//api/name/sectionWithTitle:footer:items:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ sectionWithTitle:footer:items:target:selector:</option>
-	
-	
-	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/sectionFooter">- sectionFooter</option>
+		
+		<option value="//api/name/sectionHeader">- sectionHeader</option>
+		
+		<option value="//api/name/sectionItems">- sectionItems</option>
+		
+		<option value="//api/name/sectionSelector">- sectionSelector</option>
+		
+		<option value="//api/name/sectionTarget">- sectionTarget</option>
+		
+	</optgroup>
 	
 	
 </select>
-				</li>
-			</ul>
-		</header>
-		<nav id="tocContainer" class="isShowingTOC">
-			<ul id="toc" role="tree">
-				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
 
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TSCTableSection Class Reference</h1>
 
-
-
-<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a TSCTableSection Object">Initializing a TSCTableSection Object</a></span></li>
-	
-</ul></li>
-
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/footer">footer</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/items">items</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selector">selector</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/target">target</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/title">title</a></span></li>
-	
-</ul></li>
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sectionWithItems:">sectionWithItems:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sectionWithTitle:footer:items:target:selector:">sectionWithTitle:footer:items:target:selector:</a></span></li>
-	
-</ul></li>
-
-
-
-
-			</ul>
-		</nav>
-		<article>
-			<div id="contents" class="isShowingTOC" role="main">
-				<a title="TSCTableSection Class Reference" name="top"></a>
-				<div class="main-navigation navigation-top">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="header">
-					<div class="section-header">
-						<h1 class="title title-header">TSCTableSection Class Reference</h1>
-					</div>		
-				</div>
-				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
+	<th>Inherits from</th>
+	<td>NSObject</td>
 </tr><tr>
-	<td class="specification-title">Conforms to</td>
-	<td class="specification-value"><a href="../Protocols/TSCTableSectionDataSource.html">TSCTableSectionDataSource</a></td>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/TSCTableSectionDataSource.html">TSCTableSectionDataSource</a></td>
 </tr><tr>
-	<td class="specification-title">Declared in</td>
-	<td class="specification-value">TSCTableSection.h</td>
+	<th>Declared in</th>
+	<td>TSCTableSection.h<br />TSCTableSection.m</td>
 </tr>
 						</tbody></table></div>
 					
-                    
+
                     
 					
 					<div class="section section-overview">
@@ -152,498 +133,595 @@
 					</div>
 					
 					
-					
+
 					
 					
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
-						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
-						
+
 						<a title="Initializing a TSCTableSection Object" name="task_Initializing a TSCTableSection Object"></a>
-						
-<h3 class="subsubtitle task-title">Initializing a TSCTableSection Object</h3>
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/sectionWithItems:">+&nbsp;sectionWithItems:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/sectionWithTitle:footer:items:target:selector:">+&nbsp;sectionWithTitle:footer:items:target:selector:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/footer">&nbsp;&nbsp;footer</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/items">&nbsp;&nbsp;items</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/target">&nbsp;&nbsp;target</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/selector">&nbsp;&nbsp;selector</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li>
-						</ul>
-						
-					</div>
-					
-					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/footer" title="footer"></a>
-	<h3 class="subsubtitle method-title">footer</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The text to be displayed below the section in the footer</p>
-	</div>		
-	
-    
+						<h2 class="task-title">Initializing a TSCTableSection Object</h2>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *footer</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">TSCTableSection.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/items" title="items"></a>
-	<h3 class="subsubtitle method-title">items</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>An array of items conforming to the <a href="../Protocols/TSCTableRowDataSource.html"><code>TSCTableRowDataSource</code></a> protocol to be displayed in the section</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray *items</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">TSCTableSection.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/selector" title="selector"></a>
-	<h3 class="subsubtitle method-title">selector</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The selector to call on the <a href="#//api/name/target"><code>target</code></a> when a row is selected</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SEL selector</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">TSCTableSection.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/target" title="target"></a>
-	<h3 class="subsubtitle method-title">target</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The object to send all selection events for rows inside the section</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id target</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">TSCTableSection.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/title" title="title"></a>
-	<h3 class="subsubtitle method-title">title</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The text to be displayed above the section in the header</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *title</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">TSCTableSection.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
-						
-						<div class="section-method">
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/sectionWithItems:" title="sectionWithItems:"></a>
-	<h3 class="subsubtitle method-title">sectionWithItems:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Initializes the section with an array of rows</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/sectionWithItems:">+&nbsp;sectionWithItems:</a></code>
+</h3>
 
-	<div class="method-subsection method-declaration"><code>+ (id)sectionWithItems:(NSArray *)<em>items</em></code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>items</em></dt>
-			<dd><p>The array of <a href="../Classes/TSCTableRow.html"><code>TSCTableRow</code></a>s or objects that conform to the <a href="../Protocols/TSCTableRowDataSource.html"><code>TSCTableRowDataSource</code></a> protocol</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Initializes the section with an array of rows</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">TSCTableSection.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/sectionWithTitle:footer:items:target:selector:" title="sectionWithTitle:footer:items:target:selector:"></a>
-	<h3 class="subsubtitle method-title">sectionWithTitle:footer:items:target:selector:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Initializes the section with an array of rows</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>+ (id)sectionWithTitle:(NSString *)<em>title</em> footer:(NSString *)<em>footer</em> items:(NSArray *)<em>items</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>title</em></dt>
-			<dd><p>The text to display in the header of section</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>footer</em></dt>
-			<dd><p>The text to display in the <a href="#//api/name/footer">footer</a> of the section</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>items</em></dt>
-			<dd><p>The array of <a href="../Classes/TSCTableRow.html"><code>TSCTableRow</code></a>s or objects that conform to the <a href="../Protocols/TSCTableRowDataSource.html"><code>TSCTableRowDataSource</code></a> protocol</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>target</em></dt>
-			<dd><p>The object to send all selection events for rows inside the section</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>selector</em></dt>
-			<dd><p>The <a href="#//api/name/selector">selector</a> to call on the <a href="#//api/name/target"><code>target</code></a> when a row is selected</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Initializes the section with an array of rows</p><p><a href="#//api/name/target"><code>target</code></a> and <a href="#//api/name/selector"><code>selector</code></a> can be set to nil if you wish to add a <a href="#//api/name/target">target</a> to each individual row or object. The row object will be passsed to the method given in the <a href="#//api/name/selector"><code>selector</code></a> if <a href="#//api/name/selector"><code>selector</code></a> and <a href="#//api/name/target"><code>target</code></a> are specified</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">TSCTableSection.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
-					
-					
-					
-                    
-                    
-				</div>
-				<div class="main-navigation navigation-bottom">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="footer">
-					<hr />
-					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 3 SIDED CUBE DESIGN LTD. All rights reserved. (Last updated: 2014-11-11)</span><br />
-						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
-						
-					</div>
-				</div>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the section with an array of rows</p>
 			</div>
-		</article>
-		<script type="text/javascript">
-			function jumpToChange()
-			{
-				window.location.hash = this.options[this.selectedIndex].value;
-			}
 			
-			function toggleTOC()
-			{
-				var contents = document.getElementById('contents');
-				var tocContainer = document.getElementById('tocContainer');
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id)sectionWithItems:(NSArray *)<em>items</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
 				
-				if (this.getAttribute('class') == 'open')
-				{
-					this.setAttribute('class', '');
-					contents.setAttribute('class', '');
-					tocContainer.setAttribute('class', '');
+					<tr>
+						<th scope="row" class="argument-name"><code>items</code></th>
+						<td><p>The array of <a href="../Classes/TSCTableRow.html"><code>TSCTableRow</code></a>s or objects that conform to the <a href="../Protocols/TSCTableRowDataSource.html"><code>TSCTableRowDataSource</code></a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the section with an array of rows</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sectionWithTitle:footer:items:target:selector:" title="sectionWithTitle:footer:items:target:selector:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sectionWithTitle:footer:items:target:selector:">+&nbsp;sectionWithTitle:footer:items:target:selector:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the section with an array of rows</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id)sectionWithTitle:(NSString *)<em>title</em> footer:(NSString *)<em>footer</em> items:(NSArray *)<em>items</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>The text to display in the header of section</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>footer</code></th>
+						<td><p>The text to display in the <a href="#//api/name/footer">footer</a> of the section</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>items</code></th>
+						<td><p>The array of <a href="../Classes/TSCTableRow.html"><code>TSCTableRow</code></a>s or objects that conform to the <a href="../Protocols/TSCTableRowDataSource.html"><code>TSCTableRowDataSource</code></a> protocol</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>The object to send all selection events for rows inside the section</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>selector</code></th>
+						<td><p>The <a href="#//api/name/selector">selector</a> to call on the <a href="#//api/name/target"><code>target</code></a> when a row is selected</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the section with an array of rows</p><p><a href="#//api/name/target"><code>target</code></a> and <a href="#//api/name/selector"><code>selector</code></a> can be set to nil if you wish to add a <a href="#//api/name/target">target</a> to each individual row or object. The row object will be passsed to the method given in the <a href="#//api/name/selector"><code>selector</code></a> if <a href="#//api/name/selector"><code>selector</code></a> and <a href="#//api/name/target"><code>target</code></a> are specified</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="method-title"><code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The text to be displayed above the section in the header</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *title</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/footer" title="footer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/footer">&nbsp;&nbsp;footer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The text to be displayed below the section in the footer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *footer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/items" title="items"></a>
+	<h3 class="method-title"><code><a href="#//api/name/items">&nbsp;&nbsp;items</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An array of items conforming to the <a href="../Protocols/TSCTableRowDataSource.html"><code>TSCTableRowDataSource</code></a> protocol to be displayed in the section</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray *items</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/target" title="target"></a>
+	<h3 class="method-title"><code><a href="#//api/name/target">&nbsp;&nbsp;target</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The object to send all selection events for rows inside the section</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id target</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/selector" title="selector"></a>
+	<h3 class="method-title"><code><a href="#//api/name/selector">&nbsp;&nbsp;selector</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The selector to call on the <a href="#//api/name/target"><code>target</code></a> when a row is selected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SEL selector</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="General setup" name="task_General setup"></a>
+						<h2 class="task-title">General setup</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sectionHeader" title="sectionHeader"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sectionHeader">&ndash;&nbsp;sectionHeader</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The header title of the section</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)sectionHeader</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSectionDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sectionFooter" title="sectionFooter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sectionFooter">&ndash;&nbsp;sectionFooter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The footer title of the section</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)sectionFooter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSectionDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sectionTarget" title="sectionTarget"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sectionTarget">&ndash;&nbsp;sectionTarget</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The object to send all selection events for rows inside the section</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)sectionTarget</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSectionDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sectionSelector" title="sectionSelector"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sectionSelector">&ndash;&nbsp;sectionSelector</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The selector to call on the <code>target</code> when a row is selected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (SEL)sectionSelector</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSectionDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sectionItems" title="sectionItems"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sectionItems">&ndash;&nbsp;sectionItems</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The items displayed in the section. Items must conform to <a href="../Protocols/TSCTableRowDataSource.html"><code>TSCTableRowDataSource</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)sectionItems</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableSectionDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
 					
-					window.name = "hideTOC";
-				}
-				else
-				{
-					this.setAttribute('class', 'open');
-					contents.setAttribute('class', 'isShowingTOC');
-					tocContainer.setAttribute('class', 'isShowingTOC');
 					
-					window.name = "";
-				}
-				return false;
-			}
-			
-			function toggleTOCEntryChildren(e)
-			{
-				e.stopPropagation();
-				var currentClass = this.getAttribute('class');
-				if (currentClass == 'children') {
-					this.setAttribute('class', 'children open');
-				}
-				else if (currentClass == 'children open') {
-					this.setAttribute('class', 'children');
-				}
-				return false;
-			}
-			
-			function tocEntryClick(e)
-			{
-				e.stopPropagation();
-				return true;
-			}
-			
-			function init()
-			{
-				var selectElement = document.getElementById('jumpTo');
-				selectElement.addEventListener('change', jumpToChange, false);
-				
-				var tocButton = document.getElementById('table_of_contents');
-				tocButton.addEventListener('click', toggleTOC, false);
-				
-				var taskTreeItem = document.getElementById('task_treeitem');
-				if (taskTreeItem.getElementsByTagName('li').length > 0)
-				{
-					taskTreeItem.setAttribute('class', 'children');
-					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
-				}
-				
-				var tocList = document.getElementById('toc');
-				
-				var tocEntries = tocList.getElementsByTagName('li');
-				for (var i = 0; i < tocEntries.length; i++) {
-					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
-				}
-				
-				var tocLinks = tocList.getElementsByTagName('a');
-				for (var i = 0; i < tocLinks.length; i++) {
-					tocLinks[i].addEventListener('click', tocEntryClick, false);
-				}
-				
-				if (window.name == "hideTOC") {
-					toggleTOC.call(tocButton);
-				}
-			}
-			
-			window.onload = init;
-			
-			// If showing in Xcode, hide the TOC and Header
-			if (navigator.userAgent.match(/xcode/i)) {
-				document.getElementById("contents").className = "hideInXcode"
-				document.getElementById("tocContainer").className = "hideInXcode"
-				document.getElementById("top_header").className = "hideInXcode"
-			}
-			
-		</script>
-	</body>
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 3 SIDED CUBE DESIGN LTD. All rights reserved. Updated: 2015-03-16</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
 </html>

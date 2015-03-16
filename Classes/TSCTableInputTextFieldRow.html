@@ -1,473 +1,860 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>TSCTableInputTextFieldRow Class Reference</title>
-		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
-		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.2 (build 963)" />
-	</head>
-	<body>
-		<header id="top_header">
-			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">ThunderTable </a></h1>
-				<a id="developerHome" href="../index.html">3 SIDED CUBE DESIGN LTD</a>
-			</div>
+<head>
+	<meta charset="utf-8">
+
+	<title>TSCTableInputTextFieldRow Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
 			
-			<div id="title" role="banner">
-				<h1 class="hideInXcode">TSCTableInputTextFieldRow Class Reference</h1>
-			</div>
-			<ul id="headerButtons" role="toolbar">
-				<li id="toc_button">
-					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
-				</li>
-				<li id="jumpto_button" role="navigation">
-					<select id="jumpTo">
+			<h1 id="library-title">
+				<a href="../index.html">ThunderTable </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">3 SIDED CUBE DESIGN LTD.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
 	
+
 	
 	
 	<option value="tasks">Tasks</option>
 	
 	
+
 	
 	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/autocapitalizationType">autocapitalizationType</option>
+		
+		<option value="//api/name/autocorrectionType">autocorrectionType</option>
+		
+		<option value="//api/name/isSecure">isSecure</option>
+		
+		<option value="//api/name/keyboardType">keyboardType</option>
+		
+		<option value="//api/name/placeholder">placeholder</option>
+		
+		<option value="//api/name/returnKeyType">returnKeyType</option>
+		
+	</optgroup>
 	
-	<option value="properties">Properties</option>
+
 	
-	<option value="//api/name/autocapitalizationType">&nbsp;&nbsp;&nbsp;&nbsp;autocapitalizationType</option>
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/rowWithTitle:placeholder:inputId:keyboardType:required:">+ rowWithTitle:placeholder:inputId:keyboardType:required:</option>
+		
+		<option value="//api/name/rowWithTitle:placeholder:inputId:required:">+ rowWithTitle:placeholder:inputId:required:</option>
+		
+		<option value="//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:">+ rowWithTitle:placeholder:inputId:returnKeyType:required:</option>
+		
+		<option value="//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:">+ rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:</option>
+		
+	</optgroup>
 	
-	<option value="//api/name/autocorrectionType">&nbsp;&nbsp;&nbsp;&nbsp;autocorrectionType</option>
+
 	
-	<option value="//api/name/isSecure">&nbsp;&nbsp;&nbsp;&nbsp;isSecure</option>
-	
-	<option value="//api/name/keyboardType">&nbsp;&nbsp;&nbsp;&nbsp;keyboardType</option>
-	
-	<option value="//api/name/placeholder">&nbsp;&nbsp;&nbsp;&nbsp;placeholder</option>
-	
-	<option value="//api/name/returnKeyType">&nbsp;&nbsp;&nbsp;&nbsp;returnKeyType</option>
-	
-	
-	
-	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/rowWithTitle:placeholder:inputId:keyboardType:required:">&nbsp;&nbsp;&nbsp;&nbsp;+ rowWithTitle:placeholder:inputId:keyboardType:required:</option>
-	
-	<option value="//api/name/rowWithTitle:placeholder:inputId:required:">&nbsp;&nbsp;&nbsp;&nbsp;+ rowWithTitle:placeholder:inputId:required:</option>
-	
-	<option value="//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:">&nbsp;&nbsp;&nbsp;&nbsp;+ rowWithTitle:placeholder:inputId:returnKeyType:required:</option>
-	
-	<option value="//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:">&nbsp;&nbsp;&nbsp;&nbsp;+ rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:</option>
-	
-	
-	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/rowTitle">- rowTitle</option>
+		
+		<option value="//api/name/tableViewCell:">- tableViewCell:</option>
+		
+		<option value="//api/name/tableViewCellClass">- tableViewCellClass</option>
+		
+	</optgroup>
 	
 	
 </select>
-				</li>
-			</ul>
-		</header>
-		<nav id="tocContainer" class="isShowingTOC">
-			<ul id="toc" role="tree">
-				
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
 
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TSCTableInputTextFieldRow Class Reference</h1>
 
-
-<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
-	
-</ul></li>
-
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autocapitalizationType">autocapitalizationType</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autocorrectionType">autocorrectionType</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isSecure">isSecure</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keyboardType">keyboardType</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/placeholder">placeholder</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/returnKeyType">returnKeyType</a></span></li>
-	
-</ul></li>
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowWithTitle:placeholder:inputId:keyboardType:required:">rowWithTitle:placeholder:inputId:keyboardType:required:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowWithTitle:placeholder:inputId:required:">rowWithTitle:placeholder:inputId:required:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:">rowWithTitle:placeholder:inputId:returnKeyType:required:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:">rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:</a></span></li>
-	
-</ul></li>
-
-
-
-
-			</ul>
-		</nav>
-		<article>
-			<div id="contents" class="isShowingTOC" role="main">
-				<a title="TSCTableInputTextFieldRow Class Reference" name="top"></a>
-				<div class="main-navigation navigation-top">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="header">
-					<div class="section-header">
-						<h1 class="title title-header">TSCTableInputTextFieldRow Class Reference</h1>
-					</div>		
-				</div>
-				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/TSCTableInputRow.html">TSCTableInputRow</a> : <a href="../Classes/TSCTableRow.html">TSCTableRow</a> : NSObject</td>
+	<th>Inherits from</th>
+	<td><a href="../Classes/TSCTableInputRow.html">TSCTableInputRow</a> : <a href="../Classes/TSCTableRow.html">TSCTableRow</a> : NSObject</td>
 </tr><tr>
-	<td class="specification-title">Conforms to</td>
-	<td class="specification-value"><a href="../Protocols/TSCTableRowDataSource.html">TSCTableRowDataSource</a></td>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/TSCTableRowDataSource.html">TSCTableRowDataSource</a></td>
 </tr><tr>
-	<td class="specification-title">Declared in</td>
-	<td class="specification-value">TSCTableInputTextFieldRow.h</td>
+	<th>Declared in</th>
+	<td>TSCTableInputTextFieldRow.h<br />TSCTableInputTextFieldRow.m</td>
 </tr>
 						</tbody></table></div>
 					
-                    
+
                     
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A row which provides the user with a <code>UITextField</code> for entering data</p>
+					</div>
+					
+					
+
 					
 					
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
-						<h2 class="subtitle subtitle-tasks">Tasks</h2>
-						
-						
-						
 						
 
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/placeholder">&nbsp;&nbsp;placeholder</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/keyboardType">&nbsp;&nbsp;keyboardType</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/returnKeyType">&nbsp;&nbsp;returnKeyType</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/isSecure">&nbsp;&nbsp;isSecure</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/autocorrectionType">&nbsp;&nbsp;autocorrectionType</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/autocapitalizationType">&nbsp;&nbsp;autocapitalizationType</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/rowWithTitle:placeholder:inputId:required:">+&nbsp;rowWithTitle:placeholder:inputId:required:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/rowWithTitle:placeholder:inputId:keyboardType:required:">+&nbsp;rowWithTitle:placeholder:inputId:keyboardType:required:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:">+&nbsp;rowWithTitle:placeholder:inputId:returnKeyType:required:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:">+&nbsp;rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:</a></code>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-					</div>
-					
-					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/autocapitalizationType" title="autocapitalizationType"></a>
-	<h3 class="subsubtitle method-title">autocapitalizationType</h3>
-	
-	
+						<a title="Initialization Methods" name="task_Initialization Methods"></a>
+						<h2 class="task-title">Initialization Methods</h2>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UITextAutocapitalizationType autocapitalizationType</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/autocorrectionType" title="autocorrectionType"></a>
-	<h3 class="subsubtitle method-title">autocorrectionType</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UITextAutocorrectionType autocorrectionType</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/isSecure" title="isSecure"></a>
-	<h3 class="subsubtitle method-title">isSecure</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isSecure</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/keyboardType" title="keyboardType"></a>
-	<h3 class="subsubtitle method-title">keyboardType</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) UIKeyboardType keyboardType</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/placeholder" title="placeholder"></a>
-	<h3 class="subsubtitle method-title">placeholder</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *placeholder</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/returnKeyType" title="returnKeyType"></a>
-	<h3 class="subsubtitle method-title">returnKeyType</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) UIReturnKeyType returnKeyType</code></div>
-
-    
-</div>
-						
-					</div>
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/rowWithTitle:placeholder:inputId:keyboardType:required:" title="rowWithTitle:placeholder:inputId:keyboardType:required:"></a>
-	<h3 class="subsubtitle method-title">rowWithTitle:placeholder:inputId:keyboardType:required:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (id)rowWithTitle:(NSString *)<em>title</em> placeholder:(NSString *)<em>placeholder</em> inputId:(NSString *)<em>inputId</em> keyboardType:(UIKeyboardType)<em>keyboardType</em> required:(BOOL)<em>required</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/rowWithTitle:placeholder:inputId:required:" title="rowWithTitle:placeholder:inputId:required:"></a>
-	<h3 class="subsubtitle method-title">rowWithTitle:placeholder:inputId:required:</h3>
-	
-	
+	<h3 class="method-title"><code><a href="#//api/name/rowWithTitle:placeholder:inputId:required:">+&nbsp;rowWithTitle:placeholder:inputId:required:</a></code>
+</h3>
 
-	<div class="method-subsection method-declaration"><code>+ (id)rowWithTitle:(NSString *)<em>title</em> placeholder:(NSString *)<em>placeholder</em> inputId:(NSString *)<em>inputId</em> required:(BOOL)<em>required</em></code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:" title="rowWithTitle:placeholder:inputId:returnKeyType:required:"></a>
-	<h3 class="subsubtitle method-title">rowWithTitle:placeholder:inputId:returnKeyType:required:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (id)rowWithTitle:(NSString *)<em>title</em> placeholder:(NSString *)<em>placeholder</em> inputId:(NSString *)<em>inputId</em> returnKeyType:(UIReturnKeyType)<em>returnKeyType</em> required:(BOOL)<em>required</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:" title="rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:"></a>
-	<h3 class="subsubtitle method-title">rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (id)rowWithTitle:(NSString *)<em>title</em> placeholder:(NSString *)<em>placeholder</em> inputId:(NSString *)<em>inputId</em> returnKeyType:(UIReturnKeyType)<em>returnKeyType</em> required:(BOOL)<em>required</em> isSecure:(BOOL)<em>isSecure</em></code></div>
-
-    
-</div>
-						
-					</div>
-					
-					
-					
-					
-                    
-                    
-				</div>
-				<div class="main-navigation navigation-bottom">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="footer">
-					<hr />
-					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 3 SIDED CUBE DESIGN LTD. All rights reserved. (Last updated: 2014-11-11)</span><br />
-						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
-						
-					</div>
-				</div>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the row with a title and <a href="#//api/name/placeholder">placeholder</a></p>
 			</div>
-		</article>
-		<script type="text/javascript">
-			function jumpToChange()
-			{
-				window.location.hash = this.options[this.selectedIndex].value;
-			}
 			
-			function toggleTOC()
-			{
-				var contents = document.getElementById('contents');
-				var tocContainer = document.getElementById('tocContainer');
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)rowWithTitle:(NSString *)<em>title</em> placeholder:(NSString *)<em>placeholder</em> inputId:(NSString *)<em>inputId</em> required:(BOOL)<em>required</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
 				
-				if (this.getAttribute('class') == 'open')
-				{
-					this.setAttribute('class', '');
-					contents.setAttribute('class', '');
-					tocContainer.setAttribute('class', '');
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>The title to display in the row</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>placeholder</code></th>
+						<td><p>A <a href="#//api/name/placeholder">placeholder</a> string to display in the <code>UITextField</code></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputId</code></th>
+						<td><p>The key to save the value of the <code>UITextField</code> under</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>required</code></th>
+						<td><p>Whether or not a value is required for this row</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the row with a title and <a href="#//api/name/placeholder">placeholder</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableInputTextFieldRow.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rowWithTitle:placeholder:inputId:keyboardType:required:" title="rowWithTitle:placeholder:inputId:keyboardType:required:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rowWithTitle:placeholder:inputId:keyboardType:required:">+&nbsp;rowWithTitle:placeholder:inputId:keyboardType:required:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the row with a title, <a href="#//api/name/placeholder">placeholder</a> and keyboard style</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)rowWithTitle:(NSString *)<em>title</em> placeholder:(NSString *)<em>placeholder</em> inputId:(NSString *)<em>inputId</em> keyboardType:(UIKeyboardType)<em>keyboardType</em> required:(BOOL)<em>required</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>The title to display in the row</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>placeholder</code></th>
+						<td><p>A <a href="#//api/name/placeholder">placeholder</a> string to display in the <code>UITextField</code></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputId</code></th>
+						<td><p>The key to save the value of the <code>UITextField</code> under</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>keyboardType</code></th>
+						<td><p>the keyboard type to display when the <code>UITextField</code> becomes first responder</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>required</code></th>
+						<td><p>Whether or not a value is required for this row</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the row with a title, <a href="#//api/name/placeholder">placeholder</a> and keyboard style</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableInputTextFieldRow.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:" title="rowWithTitle:placeholder:inputId:returnKeyType:required:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:">+&nbsp;rowWithTitle:placeholder:inputId:returnKeyType:required:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the row with a title, <a href="#//api/name/placeholder">placeholder</a> and return key style</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)rowWithTitle:(NSString *)<em>title</em> placeholder:(NSString *)<em>placeholder</em> inputId:(NSString *)<em>inputId</em> returnKeyType:(UIReturnKeyType)<em>returnKeyType</em> required:(BOOL)<em>required</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>The title to display in the row</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>placeholder</code></th>
+						<td><p>A <a href="#//api/name/placeholder">placeholder</a> string to display in the <code>UITextField</code></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputId</code></th>
+						<td><p>The key to save the value of the <code>UITextField</code> under</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>returnKeyType</code></th>
+						<td><p>the return key type to display on the keyboard when the <code>UITextField</code> becomes first responder</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>required</code></th>
+						<td><p>Whether or not a value is required for this row</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the row with a title, <a href="#//api/name/placeholder">placeholder</a> and return key style</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableInputTextFieldRow.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:" title="rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:">+&nbsp;rowWithTitle:placeholder:inputId:returnKeyType:required:isSecure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the row with a title, <a href="#//api/name/placeholder">placeholder</a>, return key style and optionally secure text input</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)rowWithTitle:(NSString *)<em>title</em> placeholder:(NSString *)<em>placeholder</em> inputId:(NSString *)<em>inputId</em> returnKeyType:(UIReturnKeyType)<em>returnKeyType</em> required:(BOOL)<em>required</em> isSecure:(BOOL)<em>isSecure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>The title to display in the row</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>placeholder</code></th>
+						<td><p>A <a href="#//api/name/placeholder">placeholder</a> string to display in the <code>UITextField</code></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputId</code></th>
+						<td><p>The key to save the value of the <code>UITextField</code> under</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>returnKeyType</code></th>
+						<td><p>the return key type to display on the keyboard when the <code>UITextField</code> becomes first responder</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>required</code></th>
+						<td><p>Whether or not a value is required for this row</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isSecure</code></th>
+						<td><p>Whether the <code>UITextField</code> needs to be displayed as a secure input (dots replace characters)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the row with a title, <a href="#//api/name/placeholder">placeholder</a>, return key style and optionally secure text input</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableInputTextFieldRow.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Row configuration" name="task_Row configuration"></a>
+						<h2 class="task-title">Row configuration</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/placeholder" title="placeholder"></a>
+	<h3 class="method-title"><code><a href="#//api/name/placeholder">&nbsp;&nbsp;placeholder</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A placeholder string to be displayed in the <code>UITextField</code></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *placeholder</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableInputTextFieldRow.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/keyboardType" title="keyboardType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/keyboardType">&nbsp;&nbsp;keyboardType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the type of keyboard to be shown when the <code>UITextField</code> becomes first responder</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) UIKeyboardType keyboardType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableInputTextFieldRow.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/returnKeyType" title="returnKeyType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/returnKeyType">&nbsp;&nbsp;returnKeyType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the return key type of keyboard shown when the UITextField becomes first responder</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) UIReturnKeyType returnKeyType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableInputTextFieldRow.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSecure" title="isSecure"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSecure">&nbsp;&nbsp;isSecure</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Determines whether the UITextField is shown as a secure text field</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isSecure</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableInputTextFieldRow.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/autocorrectionType" title="autocorrectionType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/autocorrectionType">&nbsp;&nbsp;autocorrectionType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Determines the autocorrection type of the UITextField</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UITextAutocorrectionType autocorrectionType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableInputTextFieldRow.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/autocapitalizationType" title="autocapitalizationType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/autocapitalizationType">&nbsp;&nbsp;autocapitalizationType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Determines the autocapitalization type of the UITextField</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UITextAutocapitalizationType autocapitalizationType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableInputTextFieldRow.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/rowTitle" title="rowTitle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rowTitle">&ndash;&nbsp;rowTitle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)rowTitle</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableRowDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tableViewCellClass" title="tableViewCellClass"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tableViewCellClass">&ndash;&nbsp;tableViewCellClass</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (Class)tableViewCellClass</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableRowDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tableViewCell:" title="tableViewCell:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tableViewCell:">&ndash;&nbsp;tableViewCell:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UITableViewCell *)tableViewCell:(UITableViewCell *)<em>cell</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TSCTableRowDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
 					
-					window.name = "hideTOC";
-				}
-				else
-				{
-					this.setAttribute('class', 'open');
-					contents.setAttribute('class', 'isShowingTOC');
-					tocContainer.setAttribute('class', 'isShowingTOC');
 					
-					window.name = "";
-				}
-				return false;
-			}
-			
-			function toggleTOCEntryChildren(e)
-			{
-				e.stopPropagation();
-				var currentClass = this.getAttribute('class');
-				if (currentClass == 'children') {
-					this.setAttribute('class', 'children open');
-				}
-				else if (currentClass == 'children open') {
-					this.setAttribute('class', 'children');
-				}
-				return false;
-			}
-			
-			function tocEntryClick(e)
-			{
-				e.stopPropagation();
-				return true;
-			}
-			
-			function init()
-			{
-				var selectElement = document.getElementById('jumpTo');
-				selectElement.addEventListener('change', jumpToChange, false);
-				
-				var tocButton = document.getElementById('table_of_contents');
-				tocButton.addEventListener('click', toggleTOC, false);
-				
-				var taskTreeItem = document.getElementById('task_treeitem');
-				if (taskTreeItem.getElementsByTagName('li').length > 0)
-				{
-					taskTreeItem.setAttribute('class', 'children');
-					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
-				}
-				
-				var tocList = document.getElementById('toc');
-				
-				var tocEntries = tocList.getElementsByTagName('li');
-				for (var i = 0; i < tocEntries.length; i++) {
-					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
-				}
-				
-				var tocLinks = tocList.getElementsByTagName('a');
-				for (var i = 0; i < tocLinks.length; i++) {
-					tocLinks[i].addEventListener('click', tocEntryClick, false);
-				}
-				
-				if (window.name == "hideTOC") {
-					toggleTOC.call(tocButton);
-				}
-			}
-			
-			window.onload = init;
-			
-			// If showing in Xcode, hide the TOC and Header
-			if (navigator.userAgent.match(/xcode/i)) {
-				document.getElementById("contents").className = "hideInXcode"
-				document.getElementById("tocContainer").className = "hideInXcode"
-				document.getElementById("top_header").className = "hideInXcode"
-			}
-			
-		</script>
-	</body>
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 3 SIDED CUBE DESIGN LTD. All rights reserved. Updated: 2015-03-16</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
 </html>
