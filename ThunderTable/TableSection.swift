@@ -10,7 +10,7 @@ import Foundation
 
 public protocol Section {
     
-    var rows: [AnyRow<Any>] { get set }
+    var rows: [AnyRow<UITableViewCell>] { get set }
     
     var header: String? { get set }
     
@@ -23,7 +23,7 @@ public protocol Section {
 
 public extension Section {
 	
-	var rows: [AnyRow<Any>] {
+	var rows: [AnyRow<UITableViewCell>] {
 		get {
 			return []
 		}
@@ -65,13 +65,13 @@ open class TableSection: Section {
     
     open var footer: String?
     
-	open var rows: [AnyRow<Any>]
+	open var rows: [AnyRow<UITableViewCell>]
     
 //    open var selectionHandler: SelectionHandler?
 //
 //	open var editHandler: EditHandler?
 	
-    public init(rows: [AnyRow<Any>], header: String? = nil, footer: String? = nil/*, selectionHandler: SelectionHandler? = nil*/) {
+    public init(rows: [AnyRow<UITableViewCell>], header: String? = nil, footer: String? = nil/*, selectionHandler: SelectionHandler? = nil*/) {
         
         self.rows = rows
         self.header = header

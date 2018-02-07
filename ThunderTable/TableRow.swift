@@ -254,7 +254,7 @@ public final class AnyRow<Cell>: Row {
 	private let box: _AnyRowBase<Cell>
 	
 	// Initializer takes our concrete implementer of Row i.e. FileCell
-	init<Concrete: Row>(_ concrete: Concrete) where Concrete.Cell == Cell {
+	public init<Concrete: Row>(_ concrete: Concrete) where Concrete.Cell == Cell {
 		box = _AnyRowBox(concrete)
 	}
 	
@@ -350,9 +350,9 @@ public protocol Row {
 	
 	associatedtype Cell: UITableViewCell
 	
-	typealias SelectionHandler = (_ row: AnyRow<Any>, _ selected: Bool, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
+	typealias SelectionHandler = (_ row: AnyRow<UITableViewCell>, _ selected: Bool, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
 	
-	typealias EditHandler = (_ row: AnyRow<Any>, _ editingStyle: UITableViewCellEditingStyle, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
+	typealias EditHandler = (_ row: AnyRow<UITableViewCell>, _ editingStyle: UITableViewCellEditingStyle, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
 	
 	/// The accessory type to be displayed on the right of the cell for this row
 	/// - Important: If you wish to return `.none` from this, make sure to use the long syntax:
