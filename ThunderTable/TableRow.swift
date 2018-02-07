@@ -457,11 +457,16 @@ public protocol Row {
 	func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat?
 	
 	/// Returns the cell's class
-	var cellClass: Cell.Type { get }
+	var cellClass: UITableViewCell.Type { get }
 }
 
 extension Row {
 
+	public var cellClass: UITableViewCell.Type {
+		get {
+			return Cell.self
+		}
+	}
 
 	public var accessoryType: UITableViewCellAccessoryType? {
 		get { return nil }
@@ -544,6 +549,14 @@ extension Row {
 /// A base class which can be subclassed providing a template for the `Row` protocol
 open class TableRow: Row {
 	
+	public var cellClass: TableViewCell.Type {
+		return TableViewCell.self
+	}
+	
+	public typealias Cell = TableViewCell
+	
+//	public var cellClass: UITableViewCell.Type
+	
 	open var cellStyle: UITableViewCellStyle?
 	
 	open var displaySeparators: Bool = true
@@ -595,25 +608,21 @@ open class TableRow: Row {
 	open var useNibSuperclass: Bool {
 		return true
 	}
-    
-    open func configure(cell: UITableViewCell, at indexPath: IndexPath, in tableViewController: TableViewController) {
+	
+	public func configure(cell: TableViewCell, at indexPath: IndexPath, in tableViewController: TableViewController) {
 		
-		guard let tableViewCell = cell as? TableViewCell else {
-			return
-		}
-        
-        if let imageView = tableViewCell.cellImageView {
+		if let imageView = cell.cellImageView {
 			
-            if image == nil && imageURL == nil {
-                imageView.isHidden = true
-            } else {
-                imageView.isHidden = false
-            }
-        }
+			if image == nil && imageURL == nil {
+				imageView.isHidden = true
+			} else {
+				imageView.isHidden = false
+			}
+		}
 		
-		tableViewCell.cellTextLabel?.textColor = titleTextColor
-		tableViewCell.cellDetailLabel?.textColor = subtitleTextColor
-    }
+		cell.cellTextLabel?.textColor = titleTextColor
+		cell.cellDetailLabel?.textColor = subtitleTextColor
+	}
 	
 	public func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat? {
 		return nil

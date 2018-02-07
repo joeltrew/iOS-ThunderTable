@@ -12,6 +12,8 @@ import Foundation
 /// to select a date and formats the date nicely
 open class InputDatePickerRow: InputTableRow {
 	
+	typealias Cell = InputDatePickerViewCell
+	
 	/// The date picker mode for the row
 	open var mode: UIDatePickerMode = .dateAndTime
 	
@@ -55,10 +57,6 @@ open class InputDatePickerRow: InputTableRow {
 			dateFormatter.dateFormat = "'Every' HH 'hours' mm 'minutes'"
 			break
 		}
-	}
-	
-	open override var cellClass: UITableViewCell.Type? {
-		return InputDatePickerViewCell.self
 	}
 	
 	open override func configure(cell: UITableViewCell, at indexPath: IndexPath, in tableViewController: TableViewController) {

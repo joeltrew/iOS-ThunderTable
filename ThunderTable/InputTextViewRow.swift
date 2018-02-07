@@ -22,9 +22,9 @@ open class InputTextViewRow: InputTableRow {
     
     open var isSecure: Bool = false
     
-    override open var cellClass: UITableViewCell.Type? {
-        return InputTextViewCell.self
-    }
+//    override open var cellClass: UITableViewCell.Type? {
+//        return InputTextViewCell.self
+//    }
     
     public init(title: String?, placeholder: String?, id: String, required: Bool, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default) {
         

@@ -15,10 +15,12 @@ import UIKit
 /// due to the custom implementation of UISlider allowing for non-integer steps.
 /// This means `sender.value !== value` in that closure!
 open class InputSliderRow: InputTableRow {
+	
+	typealias Cell = InputSliderViewCell
     
-    override open var cellClass: AnyClass? {
-        return InputSliderViewCell.self
-    }
+//    override open var cellClass: InputSliderRow.Cell.Type {
+//        return InputSliderViewCell.self
+//    }
     
     open var minValue: Float
     

@@ -172,7 +172,6 @@ open class TableViewController: UITableViewController {
     
     open func configure(cell: UITableViewCell, with row: AnyRow<Any>, at indexPath: IndexPath) {
         
-        var _row = row
         var textLabel = cell.textLabel
         var detailLabel = cell.detailTextLabel
         var imageView = cell.imageView
@@ -188,7 +187,7 @@ open class TableViewController: UITableViewController {
         }
 		
 		// Whether to display cell separators
-		if _row.displaySeparators {
+		if row.displaySeparators {
 			cell.separatorInset = UIEdgeInsets(top: 0, left: tableView.separatorInset.left, bottom: 0, right: 0)
 		} else {
 			cell.separatorInset = UIEdgeInsets(top: 0, left: CGFloat.greatestFiniteMagnitude, bottom: 0, right: 0)
@@ -224,8 +223,8 @@ open class TableViewController: UITableViewController {
         
         imageView?.set(imageURL: row.imageURL, withPlaceholder: row.image, imageSize: size, animated: true, completion: { [weak self] (image, error) -> (Void) in
             
-            if let welf = self, _row.image == nil {
-                _row.image = image
+            if let welf = self, row.image == nil {
+                row.image = image
                 welf.tableView.reloadRows(at: [indexPath], with: .none)
             }
         })
@@ -243,7 +242,7 @@ open class TableViewController: UITableViewController {
         if let nib = row.nib {
             tableView.register(nib, forCellReuseIdentifier: identifier)
         } else {
-			tableView.register(row.Cell, forCellReuseIdentifier: identifier)
+			tableView.register(row.cellClass, forCellReuseIdentifier: identifier)
         }
 		
 		registeredClasses.append(identifier)
@@ -494,7 +493,7 @@ public extension TableViewController {
         let section = data[indexPath.section]
         let row = section.rows[indexPath.row]
         
-        return row.selectionHandler != nil || section.selectionHandler != nil //|| (row as? InputRow) != nil
+        return row.selectionHandler != nil //|| section.selectionHandler != nil //|| (row as? InputRow) != nil
     }
     
     internal func set(indexPath: IndexPath, selected: Bool) {
@@ -505,9 +504,9 @@ public extension TableViewController {
         // Row selection overrides section selection
         if let rowSelectionHandler = row.selectionHandler {
             rowSelectionHandler(row, selected, indexPath, tableView)
-        } else if let sectionSelectionHandler = section.selectionHandler {
+        }/* else if let sectionSelectionHandler = section.selectionHandler {
             sectionSelectionHandler(row, selected, indexPath, tableView)
-        }
+        }*/
 		
         // Deselect it if remain selected is false
         if selected && !row.remainSelected {
@@ -515,31 +514,32 @@ public extension TableViewController {
 		} else if selected && row.remainSelected {
 			selectedIndexPath = indexPath
 		}
-			
+		
+		/*
         if row is InputRow, selected {
             let cell = tableView.cellForRow(at: indexPath)
             cell?.becomeFirstResponder()
-        }
+        }*/
     }
     
-    public func moveToInputCell(after indexPath: IndexPath) {
-        
-        outerLoop: for (sectionIndex, section) in data.enumerated() {
-            
-            if sectionIndex >= indexPath.section {
-                
-                for (rowIndex, row) in section.rows.enumerated() {
-                    
-                    if row is InputRow, rowIndex > indexPath.row {
-                        
-                        let indexPath = IndexPath(row: rowIndex, section: sectionIndex)
-                        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
-                        set(indexPath: indexPath, selected: true)
-                        
-                        break outerLoop
-                    }
-                }
-            }
-        }
-    }
+//    public func moveToInputCell(after indexPath: IndexPath) {
+//        
+//        outerLoop: for (sectionIndex, section) in data.enumerated() {
+//            
+//            if sectionIndex >= indexPath.section {
+//                
+//                for (rowIndex, row) in section.rows.enumerated() {
+//                    
+//                    if row is InputRow, rowIndex > indexPath.row {
+//                        
+//                        let indexPath = IndexPath(row: rowIndex, section: sectionIndex)
+//                        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+//                        set(indexPath: indexPath, selected: true)
+//                        
+//                        break outerLoop
+//                    }
+//                }
+//            }
+//        }
+//    }
 }

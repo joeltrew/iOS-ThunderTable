@@ -24,10 +24,6 @@ open class InputTextFieldRow: InputTableRow {
     
     open var autocapitalizationType: UITextAutocapitalizationType = .none
     
-    override open var cellClass: UITableViewCell.Type? {
-        return InputTextFieldViewCell.self
-    }
-    
     public init(title: String?, placeholder: String?, id: String, required: Bool, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default) {
         
         self.keyboardType = keyboardType

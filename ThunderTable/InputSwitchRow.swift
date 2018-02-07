@@ -10,13 +10,11 @@ import UIKit
 
 open class InputSwitchRow: InputTableRow {
 	
+	public typealias Cell = InputSwitchViewCell
+	
 	public var isEnabled = true
 	
 	public var isUserInteractionEnabled = true
-
-    override open var cellClass: InputSwitchViewCell.Type {
-        return InputSwitchViewCell.self
-    }
     
     public init(title: String?, subtitle: String?, id: String, image: UIImage? = nil) {
         

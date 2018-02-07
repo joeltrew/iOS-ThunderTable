@@ -10,6 +10,8 @@ import Foundation
 
 public typealias ValueChangeCallback = (_ value: Any?, _ sender: UIControl?) -> (Void)
 
+
+
 /// This protocol can be used to represent a `Row` in a `TableViewController` which can receive user input
 public protocol InputRow: Row {
     
@@ -49,6 +51,8 @@ public struct Callback {
 
 open class InputTableRow: NSObject, InputRow {
 	
+	public typealias Cell = TableViewCell
+	
     open var id: String
     
     open var value: Any?
@@ -83,12 +87,6 @@ open class InputTableRow: NSObject, InputRow {
     
     open var selectionHandler: SelectionHandler?
     
-    open var cellClass: TableViewCell.Type {
-		get {
-        	return TableViewCell.self
-		}
-    }
-    
     open var estimatedHeight: CGFloat? {
         return nil
     }
@@ -104,24 +102,21 @@ open class InputTableRow: NSObject, InputRow {
     internal var _nextHandler: InputCallback?
 	
 	open var nextHandler: InputCallback?
-    
-    open func configure(cell: UITableViewCell, at indexPath: IndexPath, in tableViewController: TableViewController) {
-        
-        _nextHandler = { [weak tableViewController] (control) -> (Void) in
-            tableViewController?.moveToInputCell(after: indexPath)
+	
+	public func configure(cell: TableViewCell, at indexPath: IndexPath, in tableViewController: TableViewController) {
+		
+		_nextHandler = { [weak tableViewController] (control) -> (Void) in
+//			tableViewController?.moveToInputCell(after: indexPath)
 			self.nextHandler?(control)
-        }
-                
-        if let cell = cell as? TableViewCell, let imageView = cell.cellImageView {
-            
-            if image == nil {
-                imageView.isHidden = true
-            } else {
-                imageView.isHidden = false
-            }
-        }
-    }
-    
+		}
+		
+		if image == nil {
+			cell.cellImageView?.isHidden = true
+		} else {
+			cell.cellImageView?.isHidden = false
+		}
+	}
+
     public func set(value: Any?, sender: UIControl?) {
         
         let events = UIControlEvents.valueChanged
