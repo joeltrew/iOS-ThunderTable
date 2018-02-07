@@ -115,8 +115,8 @@ open class TableViewController: UITableViewController {
 	
 	public var selectedIndexPath: IndexPath?
 	
-	public var selectedRows: [Row]? {
-		return tableView.indexPathsForSelectedRows?.map({ (indexPath) -> Row in
+	public var selectedRows: [AnyRow]? {
+		return tableView.indexPathsForSelectedRows?.map({ (indexPath) -> AnyRow in
 			return data[indexPath.section].rows[indexPath.row]
 		})
 	}
@@ -174,7 +174,7 @@ open class TableViewController: UITableViewController {
 
     // MARK: - Helper functions!
     
-    open func configure(cell: UITableViewCell, with row: Row, at indexPath: IndexPath) {
+    open func configure(cell: UITableViewCell, with row: AnyRow, at indexPath: IndexPath) {
         
         var _row = row
         var textLabel = cell.textLabel
@@ -240,7 +240,7 @@ open class TableViewController: UITableViewController {
         row.configure(cell: cell, at: indexPath, in: self)
     }
     
-    private func register(row: Row) {
+    private func register(row: AnyRow) {
         
         guard let identifier = row.identifier else { return }
         

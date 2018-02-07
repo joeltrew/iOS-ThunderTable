@@ -8,13 +8,13 @@
 
 import Foundation
 
-public typealias SelectionHandler = (_ row: Row, _ selected: Bool, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
+public typealias SelectionHandler = (_ row: AnyRow, _ selected: Bool, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
 
-public typealias EditHandler = (_ row: Row, _ editingStyle: UITableViewCellEditingStyle, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
+public typealias EditHandler = (_ row: AnyRow, _ editingStyle: UITableViewCellEditingStyle, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
 
 public protocol Section {
     
-    var rows: [Row] { get set }
+    var rows: [AnyRow] { get set }
     
     var header: String? { get set }
     
@@ -27,7 +27,7 @@ public protocol Section {
 
 public extension Section {
 	
-	var rows: [Row] {
+	var rows: [AnyRow] {
 		get {
 			return []
 		}
@@ -69,13 +69,13 @@ open class TableSection: Section {
     
     open var footer: String?
     
-    open var rows: [Row]
+    open var rows: [AnyRow]
     
     open var selectionHandler: SelectionHandler?
 	
 	open var editHandler: EditHandler?
     
-    public init(rows: [Row], header: String? = nil, footer: String? = nil, selectionHandler: SelectionHandler? = nil) {
+    public init(rows: [AnyRow], header: String? = nil, footer: String? = nil, selectionHandler: SelectionHandler? = nil) {
         
         self.rows = rows
         self.header = header
@@ -89,7 +89,7 @@ open class TableSection: Section {
 	///   - rows: The rows to sort into alphabetised sections
 	///   - selectionHandler: A selection handler to add to the sections
 	/// - Returns: An array of `TableSection` objects
-	public class func sortedSections(with rows: [Row], selectionHandler: SelectionHandler? = nil) -> [TableSection] {
+	public class func sortedSections(with rows: [AnyRow], selectionHandler: SelectionHandler? = nil) -> [TableSection] {
 		
 		let sortedAlphabetically = self.alphabeticallySort(rows: rows)
 		let sortedKeys = sortedAlphabetically.keys.sorted { (stringA, stringB) -> Bool in
@@ -102,9 +102,9 @@ open class TableSection: Section {
 		})
 	}
 	
-	private class func alphabeticallySort(rows: [Row]) -> [String : [Row]] {
+	private class func alphabeticallySort(rows: [AnyRow]) -> [String : [AnyRow]] {
 		
-		var sortedDict = [String : [Row]]()
+		var sortedDict = [String : [AnyRow]]()
 		
 		rows.forEach { (row) in
 			

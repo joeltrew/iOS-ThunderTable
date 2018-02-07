@@ -8,32 +8,190 @@
 
 import Foundation
 
+struct _InternalConcreteBox<Base: Row>: _AnyRowBox {
+	
+	func configure(cell: _AnyRowBox, at indexPath: IndexPath, in tableViewController: TableViewController) {
+		
+		guard let cell : Base.CellClass = (cell as? _InternalConcreteBox)?._baseRow {
+			return
+		}
+		_baseRow.configure(cell: <#T##Base.CellClass#>, at: <#T##IndexPath#>, in: <#T##TableViewController#>)
+	}
+	
+	var accessoryType: UITableViewCellAccessoryType? {
+		get {
+			return _baseRow.accessoryType
+		}
+	}
+	
+	var selectionStyle: UITableViewCellSelectionStyle? {
+		get {
+			return _baseRow.selectionStyle
+		}
+	}
+	
+	var cellStyle: UITableViewCellStyle? {
+		get {
+			return _baseRow.cellStyle
+		}
+	}
+	
+	var title: String? {
+		get {
+			return _baseRow.title
+		}
+	}
+	
+	var subtitle: String? {
+		get {
+			return _baseRow.subtitle
+		}
+	}
+	
+	var image: UIImage? {
+		get {
+			return _baseRow.image
+		}
+		set {
+			_baseRow.image = newValue
+		}
+	}
+	
+	var imageSize: CGSize? {
+		get {
+			return _baseRow.imageSize
+		}
+	}
+	
+	var imageURL: URL? {
+		get {
+			return _baseRow.imageURL
+		}
+	}
+	
+	var remainSelected: Bool {
+		get {
+			return _baseRow.remainSelected
+		}
+	}
+	
+	var displaySeparators: Bool {
+		get {
+			return _baseRow.displaySeparators
+		}
+	}
+	
+	var isEditable: Bool {
+		get {
+			return _baseRow.isEditable
+		}
+	}
+	
+	var prototypeIdentifier: String? {
+		get {
+			return _baseRow.prototypeIdentifier
+		}
+	}
+	
+	var estimatedHeight: CGFloat? {
+		get {
+			return _baseRow.estimatedHeight
+		}
+	}
+	
+	var padding: CGFloat? {
+		get {
+			return _baseRow.padding
+		}
+	}
+	
+	var useNibSuperclass: Bool {
+		get {
+			return _baseRow.useNibSuperclass
+		}
+	}
+	
+	func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat? {
+		return _baseRow.height(constrainedTo: size, in: tableView)
+	}
+	
+	
+	var _baseRow: Base
+	
+	init(_ base: Base) {
+		_baseRow = base
+	}
+}
+
+protocol _AnyRowBox {
+	
+	var accessoryType: UITableViewCellAccessoryType? { get }
+	
+	var selectionStyle: UITableViewCellSelectionStyle? { get }
+	
+	var cellStyle: UITableViewCellStyle? { get }
+	
+	var title: String? { get }
+	
+	var subtitle: String? { get }
+	
+	var image: UIImage? { get set }
+
+	var imageSize: CGSize? { get }
+	
+	var imageURL: URL? { get }
+	
+	var remainSelected: Bool { get }
+
+	var displaySeparators: Bool { get }
+
+	var isEditable: Bool { get }
+	
+	var prototypeIdentifier: String? { get }
+	
+	var selectionHandler: SelectionHandler? { get }
+	
+	var editHandler: EditHandler? { get }
+	
+	var estimatedHeight: CGFloat? { get }
+
+	var padding: CGFloat? { get }
+
+	var useNibSuperclass: Bool { get }
+	
+	func configure(cell: _AnyRowBox, at indexPath: IndexPath, in tableViewController: TableViewController)
+	
+	func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat?
+}
+
 /// A protocol which allows the rendering of information into a cell within
 /// a `UITableView` by providing a declarative view on the information to show
 public protocol Row {
+	
+	associatedtype CellClass
 	
 	/// The accessory type to be displayed on the right of the cell for this row
 	/// - Important: If you wish to return `.none` from this, make sure to use the long syntax:
 	/// `UITableViewCellAccessoryType.none` otherwise the compiler will think you are returning
 	/// `Optional.none` which is equivalent to nil and therefore will be ignored by `TableViewController`
-	var accessoryType: UITableViewCellAccessoryType? { get set }
+	var accessoryType: UITableViewCellAccessoryType? { get }
 	
 	/// The selection style to be applied when the cell for this row is pressed down
 	/// - Important: If you wish to return `.none` from this, make sure to use the long syntax:
 	/// `UITableViewCellSelectionStyle.none` otherwise the compiler will think you are returning
 	/// `Optional.none` which is equivalent to nil and therefore will be ignored by `TableViewController`
-	var selectionStyle: UITableViewCellSelectionStyle? { get set }
+	var selectionStyle: UITableViewCellSelectionStyle? { get }
 	
 	/// The cell style of the cell for this row
 	///
 	/// - Important: This will only take affect if you directly use TableRow, or subclass `TableViewCell` but don't use a xib based layout and return false from `useNibSuperclass`.
-	var cellStyle: UITableViewCellStyle? { get set }
+	var cellStyle: UITableViewCellStyle? { get }
 	
     /// A string to be displayed as the title for the row
-    var title: String? { get set }
+    var title: String? { get }
 	
     /// A string to be displayed as the subtitle for the row
-    var subtitle: String? { get set }
+    var subtitle: String? { get }
     
     /// An image to be displayed in the row
     var image: UIImage? { get set }
@@ -45,7 +203,7 @@ public protocol Row {
     var imageSize: CGSize? { get }
     
     /// A url to load the image for the cell from
-    var imageURL: URL? { get set }
+    var imageURL: URL? { get }
     
     /// Whether the cell should remain selected when pressed by the user
 	///
@@ -55,25 +213,22 @@ public protocol Row {
 	/// Whether separators should be displayed on the cell
 	///
 	/// Defaults to true
-	var displaySeparators: Bool { get set }
+	var displaySeparators: Bool { get }
 	
 	/// Whether the row is editable (Shows delete/actions) on cell swipe
 	///
 	/// Defaults to false
-	var isEditable: Bool { get set }
-    
-    /// The class for the `UITableViewCell` subclass for the cell
-    var cellClass: AnyClass? { get }
+	var isEditable: Bool { get }
     
     /// A prototype identifier for a cell which is defined in a storyboard
 	/// file, which this row will use
     var prototypeIdentifier: String? { get }
     
     /// A closure which will be called when the row is pressed on in the table view
-    var selectionHandler: SelectionHandler? { get set }
+    var selectionHandler: SelectionHandler? { get }
 	
 	/// A closure which will be called when the row is edited in the table view
-	var editHandler: EditHandler? { get set }
+	var editHandler: EditHandler? { get }
     
     /// The estimated height of the row
 	///
@@ -106,7 +261,7 @@ public protocol Row {
     ///   - cell: The cell which needs configuring
     ///   - indexPath: The index path which that cell is at
     ///   - tableViewController: The table view controller which the cell is in
-    func configure(cell: UITableViewCell, at indexPath: IndexPath, in tableViewController: TableViewController)
+    func configure(cell: CellClass, at indexPath: IndexPath, in tableViewController: TableViewController)
  
 	/// A function which allows providing a manual height for a cell not layed
 	/// out using Interface Builder
@@ -119,94 +274,80 @@ public protocol Row {
 }
 
 extension Row {
-	
+
 	public var accessoryType: UITableViewCellAccessoryType? {
 		get { return nil }
-		set {}
 	}
-	
+
 	public var selectionStyle: UITableViewCellSelectionStyle? {
 		get { return nil }
-		set {}
 	}
-	
+
 	public var displaySeparators: Bool {
 		get { return true }
-		set {}
 	}
-	
+
 	public var isEditable: Bool {
 		get { return false }
-		set {}
 	}
-	
+
 	public var cellStyle: UITableViewCellStyle? {
 		get { return nil }
-		set {}
 	}
-    
+
     public var title: String? {
 		get { return nil }
-		set {}
     }
-    
+
     public var subtitle: String? {
 		get { return nil }
-		set {}
     }
-    
+
     public var image: UIImage? {
         get { return nil }
-        set {}
-    }
-    
-    public var imageURL: URL? {
-		get { return nil }
 		set {}
     }
-    
+
+    public var imageURL: URL? {
+		get { return nil }
+    }
+
     public var imageSize: CGSize? {
         return nil
     }
-    
+
     public var remainSelected: Bool {
         return false
     }
-    
-    public var cellClass: AnyClass? {
-        return TableViewCell.self
-    }
-    
+
     public var prototypeIdentifier: String? {
         return nil
     }
-    
+
     public var selectionHandler: SelectionHandler? {
 		get { return nil }
-		set {}
     }
-	
+
 	public var editHandler: EditHandler? {
 		get { return nil }
-		set {}
 	}
-	
+
 	public var useNibSuperclass: Bool {
 		return true
 	}
-    
+
     public var estimatedHeight: CGFloat? {
         return nil
     }
-    
+
     public var padding: CGFloat? {
         return nil
     }
-    
+
     public func configure(cell: UITableViewCell, at indexPath: IndexPath, in tableViewController: TableViewController) {
-        
+
     }
-	
+
 	public func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat? {
 		return nil
 	}
