@@ -8,167 +8,337 @@
 
 import Foundation
 
-struct _InternalConcreteBox<Base: Row>: _AnyRowBox {
+// Abstract generic base class that implements Row
+
+// Generic parameter around the associated type
+
+private class _AnyRowBase<CellClass>: Row {
 	
-	func configure(cell: _AnyRowBox, at indexPath: IndexPath, in tableViewController: TableViewController) {
-		
-		guard let cell : Base.CellClass = (cell as? _InternalConcreteBox)?._baseRow {
-			return
+	init() {
+		guard type(of: self) != _AnyRowBase.self else {
+			fatalError("_AnyRowBase<Model> instances can not be created; create a subclass instance instead")
 		}
-		_baseRow.configure(cell: <#T##Base.CellClass#>, at: <#T##IndexPath#>, in: <#T##TableViewController#>)
 	}
 	
 	var accessoryType: UITableViewCellAccessoryType? {
 		get {
-			return _baseRow.accessoryType
+			fatalError("Must override")
 		}
 	}
 	
 	var selectionStyle: UITableViewCellSelectionStyle? {
 		get {
-			return _baseRow.selectionStyle
+			fatalError("Must override")
 		}
 	}
 	
 	var cellStyle: UITableViewCellStyle? {
 		get {
-			return _baseRow.cellStyle
+			fatalError("Must override")
 		}
 	}
 	
 	var title: String? {
 		get {
-			return _baseRow.title
+			fatalError("Must override")
 		}
 	}
 	
 	var subtitle: String? {
 		get {
-			return _baseRow.subtitle
+			fatalError("Must override")
 		}
 	}
 	
 	var image: UIImage? {
 		get {
-			return _baseRow.image
+			fatalError("Must override")
 		}
 		set {
-			_baseRow.image = newValue
+			fatalError("Must override")
 		}
 	}
 	
 	var imageSize: CGSize? {
 		get {
-			return _baseRow.imageSize
+			fatalError("Must override")
 		}
 	}
 	
 	var imageURL: URL? {
 		get {
-			return _baseRow.imageURL
+			fatalError("Must override")
 		}
 	}
 	
 	var remainSelected: Bool {
 		get {
-			return _baseRow.remainSelected
+			fatalError("Must override")
 		}
 	}
 	
 	var displaySeparators: Bool {
 		get {
-			return _baseRow.displaySeparators
+			fatalError("Must override")
 		}
 	}
 	
 	var isEditable: Bool {
 		get {
-			return _baseRow.isEditable
+			fatalError("Must override")
 		}
 	}
 	
 	var prototypeIdentifier: String? {
 		get {
-			return _baseRow.prototypeIdentifier
+			fatalError("Must override")
+		}
+	}
+	
+	var selectionHandler: Row.SelectionHandler? {
+		get {
+			fatalError("Must override")
+		}
+	}
+	
+	var editHandler: Row.EditHandler? {
+		get {
+			fatalError("Must override")
 		}
 	}
 	
 	var estimatedHeight: CGFloat? {
 		get {
-			return _baseRow.estimatedHeight
+			fatalError("Must override")
 		}
 	}
 	
 	var padding: CGFloat? {
 		get {
-			return _baseRow.padding
+			fatalError("Must override")
 		}
 	}
 	
 	var useNibSuperclass: Bool {
 		get {
-			return _baseRow.useNibSuperclass
+			fatalError("Must override")
 		}
 	}
 	
-	func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat? {
-		return _baseRow.height(constrainedTo: size, in: tableView)
+	func configure(cell: CellClass, at indexPath: IndexPath, in tableViewController: TableViewController) {
+		fatalError("Must override")
 	}
 	
-	
-	var _baseRow: Base
-	
-	init(_ base: Base) {
-		_baseRow = base
+	func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat? {
+		fatalError("Must override")
 	}
 }
 
-protocol _AnyRowBox {
-	
-	var accessoryType: UITableViewCellAccessoryType? { get }
-	
-	var selectionStyle: UITableViewCellSelectionStyle? { get }
-	
-	var cellStyle: UITableViewCellStyle? { get }
-	
-	var title: String? { get }
-	
-	var subtitle: String? { get }
-	
-	var image: UIImage? { get set }
+// Box class
 
-	var imageSize: CGSize? { get }
-	
-	var imageURL: URL? { get }
-	
-	var remainSelected: Bool { get }
+// final subclass of our abstract base
 
-	var displaySeparators: Bool { get }
+// Inherits the protocol conformance
 
-	var isEditable: Bool { get }
-	
-	var prototypeIdentifier: String? { get }
-	
-	var selectionHandler: SelectionHandler? { get }
-	
-	var editHandler: EditHandler? { get }
-	
-	var estimatedHeight: CGFloat? { get }
+// Links Concrete.CellClass (associated type) to _AnyRowBase.CellClass (generic parameter)
 
-	var padding: CGFloat? { get }
+private final class _AnyRowBox<Concrete: Row>: _AnyRowBase<Concrete.CellClass> {
+	
+	// variable used since we're calling mutating functions
+	var concrete: Concrete
+	
+	init(_ concrete: Concrete) {
+		self.concrete = concrete
+	}
+	
+	override var accessoryType: UITableViewCellAccessoryType? {
+		get { return concrete.accessoryType }
+	}
+	
+	override var selectionStyle: UITableViewCellSelectionStyle? {
+		get { return concrete.selectionStyle }
+	}
+	
+	override var cellStyle: UITableViewCellStyle? {
+		get { return concrete.cellStyle }
+	}
+	
+	override var title: String? {
+		get { return concrete.title }
+	}
+	
+	override var subtitle: String? {
+		get { return concrete.subtitle }
+	}
+	
+	override var image: UIImage? {
+		get {
+			return concrete.image
+		}
+		set {
+			concrete.image = newValue
+		}
+	}
+	
+	override var imageSize: CGSize? {
+		get { return concrete.imageSize }
+	}
+	
+	override var imageURL: URL? {
+		get { return concrete.imageURL }
+	}
+	
+	override var remainSelected: Bool {
+		get { return concrete.remainSelected }
+	}
+	
+	override var displaySeparators: Bool {
+		get { return concrete.displaySeparators }
+	}
+	
+	override var isEditable: Bool {
+		get { return concrete.isEditable }
+	}
+	
+	override var prototypeIdentifier: String? {
+		get { return concrete.prototypeIdentifier }
+	}
+	
+	override var selectionHandler: Row.SelectionHandler? {
+		get { return concrete.selectionHandler }
+	}
+	
+	override var editHandler: Row.EditHandler? {
+		get { return concrete.editHandler }
+	}
 
-	var useNibSuperclass: Bool { get }
+	override var estimatedHeight: CGFloat? {
+		get { return concrete.estimatedHeight }
+	}
 	
-	func configure(cell: _AnyRowBox, at indexPath: IndexPath, in tableViewController: TableViewController)
+	override var padding: CGFloat? {
+		get { return concrete.padding }
+	}
 	
-	func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat?
+	override var useNibSuperclass: Bool {
+		get { return concrete.useNibSuperclass }
+	}
+	
+	override func configure(cell: Concrete.CellClass, at indexPath: IndexPath, in tableViewController: TableViewController) {
+		concrete.configure(cell: cell, at: indexPath, in: tableViewController)
+	}
+	
+	override func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat? {
+		return concrete.height(constrainedTo: size, in: tableView)
+	}
+}
+
+// Public type erasing wrapper class
+
+// Implements the Row protocol
+
+// Generic around the associated type
+
+public final class AnyRow<CellClass>: Row {
+	
+	private let box: _AnyRowBase<CellClass>
+	
+	// Initializer takes our concrete implementer of Row i.e. FileCell
+	init<Concrete: Row>(_ concrete: Concrete) where Concrete.CellClass == CellClass {
+		box = _AnyRowBox(concrete)
+	}
+	
+	public var accessoryType: UITableViewCellAccessoryType? {
+		get { return box.accessoryType }
+	}
+	
+	public var selectionStyle: UITableViewCellSelectionStyle? {
+		get { return box.selectionStyle }
+	}
+	
+	public var cellStyle: UITableViewCellStyle? {
+		get { return box.cellStyle }
+	}
+	
+	public var title: String? {
+		get { return box.title }
+	}
+	
+	public var subtitle: String? {
+		get { return box.subtitle }
+	}
+	
+	public var image: UIImage? {
+		get {
+			return box.image
+		}
+		set {
+			box.image = newValue
+		}
+	}
+	
+	public var imageSize: CGSize? {
+		get { return box.imageSize }
+	}
+	
+	public var imageURL: URL? {
+		get { return box.imageURL }
+	}
+	
+	public var remainSelected: Bool {
+		get { return box.remainSelected }
+	}
+	
+	public var displaySeparators: Bool {
+		get { return box.displaySeparators }
+	}
+	
+	public var isEditable: Bool {
+		get { return box.isEditable }
+	}
+	
+	public var prototypeIdentifier: String? {
+		get { return box.prototypeIdentifier }
+	}
+	
+	public var selectionHandler: Row.SelectionHandler? {
+		return box.selectionHandler
+	}
+	
+	public var editHandler: Row.EditHandler? {
+		return box.editHandler
+	}
+	
+	public var estimatedHeight: CGFloat? {
+		get { return box.estimatedHeight }
+	}
+	
+	public var padding: CGFloat? {
+		get { return box.padding }
+	}
+	
+	public var useNibSuperclass: Bool {
+		get { return box.useNibSuperclass }
+	}
+	
+	public func configure(cell: AnyRow<CellClass>.CellClass, at indexPath: IndexPath, in tableViewController: TableViewController) {
+		box.configure(cell: cell, at: indexPath, in: tableViewController)
+	}
+	
+	public func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat? {
+		return box.height(constrainedTo: size, in: tableView)
+	}
 }
 
 /// A protocol which allows the rendering of information into a cell within
 /// a `UITableView` by providing a declarative view on the information to show
 public protocol Row {
 	
-	associatedtype CellClass
+	associatedtype CellClass: UITableViewCell
+	
+	typealias SelectionHandler = (_ row: AnyRow<Any>, _ selected: Bool, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
+	
+	typealias EditHandler = (_ row: AnyRow<Any>, _ editingStyle: UITableViewCellEditingStyle, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
 	
 	/// The accessory type to be displayed on the right of the cell for this row
 	/// - Important: If you wish to return `.none` from this, make sure to use the long syntax:

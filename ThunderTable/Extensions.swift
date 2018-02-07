@@ -10,11 +10,11 @@ import Foundation
 
 extension Array : Section {
 	
-	public var rows: [AnyRow] {
+	public var rows: [AnyRow<Any>] {
 		get {
 			return filter({ (item) -> Bool in
-				return item is AnyRow
-			}) as? [AnyRow] ?? []
+				return item is AnyRow<Any>
+			}) as? [AnyRow<Any>] ?? []
 		}
 		set {}
 	}

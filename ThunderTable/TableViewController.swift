@@ -115,8 +115,8 @@ open class TableViewController: UITableViewController {
 	
 	public var selectedIndexPath: IndexPath?
 	
-	public var selectedRows: [AnyRow]? {
-		return tableView.indexPathsForSelectedRows?.map({ (indexPath) -> AnyRow in
+	public var selectedRows: [AnyRow<Any>]? {
+		return tableView.indexPathsForSelectedRows?.map({ (indexPath) -> AnyRow<Any> in
 			return data[indexPath.section].rows[indexPath.row]
 		})
 	}
@@ -148,33 +148,33 @@ open class TableViewController: UITableViewController {
 		NotificationCenter.default.removeObserver(dynamicChangeObserver)
 	}
     
-    public var inputDictionary: [String: Any?]? {
-        
-        guard let inputRows = data.flatMap({ $0.rows.filter({ $0 as? InputRow != nil }) }) as? [InputRow] else { return nil }
-        
-        var dictionary: [String: Any?] = [:]
-        
-        inputRows.forEach { (row) in
-            dictionary[row.id] = row.value
-        }
-        
-        return dictionary
-    }
+//    public var inputDictionary: [String: Any?]? {
+//
+//        guard let inputRows = data.flatMap({ $0.rows.filter({ $0 as? InputRow != nil }) }) as? [InputRow] else { return nil }
+//
+//        var dictionary: [String: Any?] = [:]
+//
+//        inputRows.forEach { (row) in
+//            dictionary[row.id] = row.value
+//        }
+//
+//        return dictionary
+//    }
 	
-	public var missingRequiredInputRows: [InputRow]? {
-		
-		guard let inputRows = data.flatMap({ $0.rows.filter({ $0 as? InputRow != nil }) }) as? [InputRow] else { return nil }
-		
-		return inputRows.filter({ (inputRow) -> Bool in
-			return inputRow.required && inputRow.value == nil
-		})
-	}
+//	public var missingRequiredInputRows: [InputRow]? {
+//
+//		guard let inputRows = data.flatMap({ $0.rows.filter({ $0 as? InputRow != nil }) }) as? [InputRow] else { return nil }
+//
+//		return inputRows.filter({ (inputRow) -> Bool in
+//			return inputRow.required && inputRow.value == nil
+//		})
+//	}
 	
     private var registeredClasses: [String] = []
 
     // MARK: - Helper functions!
     
-    open func configure(cell: UITableViewCell, with row: AnyRow, at indexPath: IndexPath) {
+    open func configure(cell: UITableViewCell, with row: AnyRow<Any>, at indexPath: IndexPath) {
         
         var _row = row
         var textLabel = cell.textLabel
@@ -240,14 +240,14 @@ open class TableViewController: UITableViewController {
         row.configure(cell: cell, at: indexPath, in: self)
     }
     
-    private func register(row: AnyRow) {
+    private func register(row: AnyRow<Any>) {
         
         guard let identifier = row.identifier else { return }
         
         if let nib = row.nib {
             tableView.register(nib, forCellReuseIdentifier: identifier)
-        } else if let cellClass = row.cellClass {
-            tableView.register(cellClass, forCellReuseIdentifier: identifier)
+        } else {
+			tableView.register(row.CellClass, forCellReuseIdentifier: identifier)
         }
 		
 		registeredClasses.append(identifier)
@@ -373,9 +373,8 @@ open class TableViewController: UITableViewController {
         var cell = dynamicHeightCells[identifier]
         if cell == nil {
             
-            if let aClass = row.cellClass as? UITableViewCell.Type {
-                cell = aClass.init(style: .default, reuseIdentifier: identifier)
-            }
+            let aClass = row.CellClass
+			cell = aClass.init(style: .default, reuseIdentifier: identifier)
         }
         
         guard let _cell = cell else { return UITableViewAutomaticDimension }
@@ -501,7 +500,7 @@ public extension TableViewController {
         let section = data[indexPath.section]
         let row = section.rows[indexPath.row]
         
-        return row.selectionHandler != nil || section.selectionHandler != nil || (row as? InputRow) != nil
+        return row.selectionHandler != nil || section.selectionHandler != nil //|| (row as? InputRow) != nil
     }
     
     internal func set(indexPath: IndexPath, selected: Bool) {
