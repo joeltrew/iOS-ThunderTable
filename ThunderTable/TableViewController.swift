@@ -50,54 +50,50 @@ extension UITableViewCellAccessoryType {
     }
 }
 
-extension Row {
+extension AnyRow {
     
     /// Returns a nib for the row's cell class if one exists in the bundle for the class
     var nib: UINib? {
-        
-        get {
-            
-            guard var cellClass = cellClass else { return nil }
-            
-            var classString = String(describing: cellClass)
-            guard var nibName = classString.components(separatedBy: ".").last else { return nil }
-						
-            var bundle = Bundle(for: cellClass)
-			var nibPath = bundle.path(forResource: nibName, ofType: "nib")
-			
-			// Only look for nib superclasses if we're told to by Row protocol
-			if useNibSuperclass {
-				
-				// Sometimes a cell may have subclassed without providing it's own nib file
-				// In this case always use it's superclass!
-				while nibPath == nil, let superClass = cellClass.superclass(){
-					
-					// Make sure we're still looking in the correct bundle
-					bundle = Bundle(for: superClass)
-					// Find the new class name
-					classString = String(describing: superClass)
-					// Get the new nib name for the classes superClass
-					if let superNibName = classString.components(separatedBy: ".").last, let path = bundle.path(forResource: superNibName, ofType: "nib") {
-						// Update nibPath and nibName
-						nibPath = path
-						nibName = superNibName
-					}
-					cellClass = superClass
-				}
-			}
-			
-            guard nibPath != nil else { return nil }
-            let nib = UINib(nibName: nibName, bundle: bundle)
-            return nib
-        }
+		
+		return nil
+//		var classString = String(describing: Cell.self)
+//		guard var nibName = classString.components(separatedBy: ".").last else { return nil }
+//
+//		var bundle = Bundle(for: Cell.self)
+//		var nibPath = bundle.path(forResource: nibName, ofType: "nib")
+//
+//		// Only look for nib superclasses if we're told to by Row protocol
+//		if useNibSuperclass {
+//
+//			// Sometimes a cell may have subclassed without providing it's own nib file
+//			// In this case always use it's superclass!
+//			while nibPath == nil, let superClass = cellClass.superclass(){
+//
+//				// Make sure we're still looking in the correct bundle
+//				bundle = Bundle(for: superClass)
+//				// Find the new class name
+//				classString = String(describing: superClass)
+//				// Get the new nib name for the classes superClass
+//				if let superNibName = classString.components(separatedBy: ".").last, let path = bundle.path(forResource: superNibName, ofType: "nib") {
+//					// Update nibPath and nibName
+//					nibPath = path
+//					nibName = superNibName
+//				}
+//				cellClass = superClass
+//			}
+//		}
+//
+//		guard nibPath != nil else { return nil }
+//		let nib = UINib(nibName: nibName, bundle: bundle)
+//		return nib
     }
     
     var identifier: String? {
         
         if let prototypeIdentifier = prototypeIdentifier {
             return prototypeIdentifier
-        } else if let cellClass = cellClass {
-            return String(describing: cellClass)
+        } else {
+//            return String(describing: Cell.self)
         }
         
         return nil
@@ -247,7 +243,7 @@ open class TableViewController: UITableViewController {
         if let nib = row.nib {
             tableView.register(nib, forCellReuseIdentifier: identifier)
         } else {
-			tableView.register(row.CellClass, forCellReuseIdentifier: identifier)
+			tableView.register(row.Cell, forCellReuseIdentifier: identifier)
         }
 		
 		registeredClasses.append(identifier)
@@ -281,9 +277,9 @@ open class TableViewController: UITableViewController {
 		// Row edit handler overrides section edit handler
 		if let rowEditHandler = row.editHandler {
 			rowEditHandler(row, editingStyle, indexPath, tableView)
-		} else if let sectionEditHandler = section.editHandler {
+		}/* else if let sectionEditHandler = section.editHandler {
 			sectionEditHandler(row, editingStyle, indexPath, tableView)
-		}
+		}*/
 	}
 	
 	override open func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
@@ -373,7 +369,7 @@ open class TableViewController: UITableViewController {
         var cell = dynamicHeightCells[identifier]
         if cell == nil {
             
-            let aClass = row.CellClass
+            let aClass = row.Cell.self
 			cell = aClass.init(style: .default, reuseIdentifier: identifier)
         }
         

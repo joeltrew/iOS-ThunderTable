@@ -12,7 +12,7 @@ import Foundation
 
 // Generic parameter around the associated type
 
-private class _AnyRowBase<CellClass>: Row {
+private class _AnyRowBase<Cell>: Row {
 	
 	init() {
 		guard type(of: self) != _AnyRowBase.self else {
@@ -125,7 +125,7 @@ private class _AnyRowBase<CellClass>: Row {
 		}
 	}
 	
-	func configure(cell: CellClass, at indexPath: IndexPath, in tableViewController: TableViewController) {
+	func configure(cell: Cell, at indexPath: IndexPath, in tableViewController: TableViewController) {
 		fatalError("Must override")
 	}
 	
@@ -140,96 +140,96 @@ private class _AnyRowBase<CellClass>: Row {
 
 // Inherits the protocol conformance
 
-// Links Concrete.CellClass (associated type) to _AnyRowBase.CellClass (generic parameter)
+// Links Concrete.Cell (associated type) to _AnyRowBase.Cell (generic parameter)
 
-private final class _AnyRowBox<Concrete: Row>: _AnyRowBase<Concrete.CellClass> {
+private final class _AnyRowBox<ConcreteRow: Row>: _AnyRowBase<ConcreteRow.Cell> {
 	
 	// variable used since we're calling mutating functions
-	var concrete: Concrete
+	var concreteRow: ConcreteRow
 	
-	init(_ concrete: Concrete) {
-		self.concrete = concrete
+	init(_ concreteRow: ConcreteRow) {
+		self.concreteRow = concreteRow
 	}
 	
 	override var accessoryType: UITableViewCellAccessoryType? {
-		get { return concrete.accessoryType }
+		get { return concreteRow.accessoryType }
 	}
 	
 	override var selectionStyle: UITableViewCellSelectionStyle? {
-		get { return concrete.selectionStyle }
+		get { return concreteRow.selectionStyle }
 	}
 	
 	override var cellStyle: UITableViewCellStyle? {
-		get { return concrete.cellStyle }
+		get { return concreteRow.cellStyle }
 	}
 	
 	override var title: String? {
-		get { return concrete.title }
+		get { return concreteRow.title }
 	}
 	
 	override var subtitle: String? {
-		get { return concrete.subtitle }
+		get { return concreteRow.subtitle }
 	}
 	
 	override var image: UIImage? {
 		get {
-			return concrete.image
+			return concreteRow.image
 		}
 		set {
-			concrete.image = newValue
+			concreteRow.image = newValue
 		}
 	}
 	
 	override var imageSize: CGSize? {
-		get { return concrete.imageSize }
+		get { return concreteRow.imageSize }
 	}
 	
 	override var imageURL: URL? {
-		get { return concrete.imageURL }
+		get { return concreteRow.imageURL }
 	}
 	
 	override var remainSelected: Bool {
-		get { return concrete.remainSelected }
+		get { return concreteRow.remainSelected }
 	}
 	
 	override var displaySeparators: Bool {
-		get { return concrete.displaySeparators }
+		get { return concreteRow.displaySeparators }
 	}
 	
 	override var isEditable: Bool {
-		get { return concrete.isEditable }
+		get { return concreteRow.isEditable }
 	}
 	
 	override var prototypeIdentifier: String? {
-		get { return concrete.prototypeIdentifier }
+		get { return concreteRow.prototypeIdentifier }
 	}
 	
 	override var selectionHandler: Row.SelectionHandler? {
-		get { return concrete.selectionHandler }
+		get { return concreteRow.selectionHandler }
 	}
 	
 	override var editHandler: Row.EditHandler? {
-		get { return concrete.editHandler }
+		get { return concreteRow.editHandler }
 	}
 
 	override var estimatedHeight: CGFloat? {
-		get { return concrete.estimatedHeight }
+		get { return concreteRow.estimatedHeight }
 	}
 	
 	override var padding: CGFloat? {
-		get { return concrete.padding }
+		get { return concreteRow.padding }
 	}
 	
 	override var useNibSuperclass: Bool {
-		get { return concrete.useNibSuperclass }
+		get { return concreteRow.useNibSuperclass }
 	}
 	
-	override func configure(cell: Concrete.CellClass, at indexPath: IndexPath, in tableViewController: TableViewController) {
-		concrete.configure(cell: cell, at: indexPath, in: tableViewController)
+	override func configure(cell: ConcreteRow.Cell, at indexPath: IndexPath, in tableViewController: TableViewController) {
+		concreteRow.configure(cell: cell, at: indexPath, in: tableViewController)
 	}
 	
 	override func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat? {
-		return concrete.height(constrainedTo: size, in: tableView)
+		return concreteRow.height(constrainedTo: size, in: tableView)
 	}
 }
 
@@ -239,12 +239,12 @@ private final class _AnyRowBox<Concrete: Row>: _AnyRowBase<Concrete.CellClass> {
 
 // Generic around the associated type
 
-public final class AnyRow<CellClass>: Row {
+public final class AnyRow<Cell>: Row {
 	
-	private let box: _AnyRowBase<CellClass>
+	private let box: _AnyRowBase<Cell>
 	
 	// Initializer takes our concrete implementer of Row i.e. FileCell
-	init<Concrete: Row>(_ concrete: Concrete) where Concrete.CellClass == CellClass {
+	init<Concrete: Row>(_ concrete: Concrete) where Concrete.Cell == Cell {
 		box = _AnyRowBox(concrete)
 	}
 	
@@ -321,7 +321,7 @@ public final class AnyRow<CellClass>: Row {
 		get { return box.useNibSuperclass }
 	}
 	
-	public func configure(cell: AnyRow<CellClass>.CellClass, at indexPath: IndexPath, in tableViewController: TableViewController) {
+	public func configure(cell: UITableViewCell, at indexPath: IndexPath, in tableViewController: TableViewController) {
 		box.configure(cell: cell, at: indexPath, in: tableViewController)
 	}
 	
@@ -334,7 +334,7 @@ public final class AnyRow<CellClass>: Row {
 /// a `UITableView` by providing a declarative view on the information to show
 public protocol Row {
 	
-	associatedtype CellClass: UITableViewCell
+	associatedtype Cell: UITableViewCell
 	
 	typealias SelectionHandler = (_ row: AnyRow<Any>, _ selected: Bool, _ indexPath: IndexPath, _ tableView: UITableView) -> (Void)
 	
@@ -412,10 +412,10 @@ public protocol Row {
 	/// using interface builder
     var padding: CGFloat? { get }
 	
-	/// Whether if no nib was found with the same file name as `cellClass`
+	/// Whether if no nib was found with the same file name as `Cell`
 	/// (expected behaviour is to name your cell's xib the same file name as the 
-	/// class you return from `cellClass`), we should then find a xib for a
-	/// superclass of `cellClass`
+	/// class you return from `Cell`), we should then find a xib for a
+	/// superclass of `Cell`
 	///
 	/// Defaults to true, meaning all cells without their own xib will use
 	/// a superclasses xib to layout, this will eventually come across the base
@@ -431,7 +431,7 @@ public protocol Row {
     ///   - cell: The cell which needs configuring
     ///   - indexPath: The index path which that cell is at
     ///   - tableViewController: The table view controller which the cell is in
-    func configure(cell: CellClass, at indexPath: IndexPath, in tableViewController: TableViewController)
+    func configure(cell: Cell, at indexPath: IndexPath, in tableViewController: TableViewController)
  
 	/// A function which allows providing a manual height for a cell not layed
 	/// out using Interface Builder
@@ -561,20 +561,6 @@ open class TableRow: Row {
 	open var selectionStyle: UITableViewCellSelectionStyle?
 	
 	open var accessoryType: UITableViewCellAccessoryType?
-    
-    open var cellClass: AnyClass? {
-		guard let cellStyle = cellStyle else { return TableViewCell.self }
-		switch cellStyle {
-		case .default:
-			return DefaultTableViewCell.self
-		case .subtitle:
-			return SubtitleTableViewCell.self
-		case .value1:
-			return Value1TableViewCell.self
-		case .value2:
-			return TableViewCell.self
-		}
-    }
     
     open var estimatedHeight: CGFloat? {
         return nil
