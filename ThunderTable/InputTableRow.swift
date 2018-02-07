@@ -48,7 +48,7 @@ public struct Callback {
 }
 
 open class InputTableRow: NSObject, InputRow {
-    
+	
     open var id: String
     
     open var value: Any?
@@ -83,8 +83,10 @@ open class InputTableRow: NSObject, InputRow {
     
     open var selectionHandler: SelectionHandler?
     
-    open var cellClass: AnyClass? {
-        return TableViewCell.self
+    open var cellClass: TableViewCell.Type {
+		get {
+        	return TableViewCell.self
+		}
     }
     
     open var estimatedHeight: CGFloat? {

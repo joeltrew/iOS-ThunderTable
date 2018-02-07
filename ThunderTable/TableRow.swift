@@ -20,6 +20,12 @@ private class _AnyRowBase<Cell>: Row {
 		}
 	}
 	
+	var cellClass: UITableViewCell.Type {
+		get {
+			fatalError("Must override")
+		}
+	}
+	
 	var accessoryType: UITableViewCellAccessoryType? {
 		get {
 			fatalError("Must override")
@@ -151,6 +157,10 @@ private final class _AnyRowBox<ConcreteRow: Row>: _AnyRowBase<ConcreteRow.Cell> 
 		self.concreteRow = concreteRow
 	}
 	
+	override var cellClass: UITableViewCell.Type {
+		get { return concreteRow.cellClass }
+	}
+	
 	override var accessoryType: UITableViewCellAccessoryType? {
 		get { return concreteRow.accessoryType }
 	}
@@ -246,6 +256,10 @@ public final class AnyRow<Cell>: Row {
 	// Initializer takes our concrete implementer of Row i.e. FileCell
 	init<Concrete: Row>(_ concrete: Concrete) where Concrete.Cell == Cell {
 		box = _AnyRowBox(concrete)
+	}
+	
+	public var cellClass: UITableViewCell.Type {
+		get { return box.cellClass }
 	}
 	
 	public var accessoryType: UITableViewCellAccessoryType? {
@@ -441,9 +455,13 @@ public protocol Row {
 	///   - tableView: The table view which the row will be displayed in
 	/// - Returns: The height (or nil, to have this ignored) the row should be displayed at
 	func height(constrainedTo size: CGSize, in tableView: UITableView) -> CGFloat?
+	
+	/// Returns the cell's class
+	var cellClass: Cell.Type { get }
 }
 
 extension Row {
+
 
 	public var accessoryType: UITableViewCellAccessoryType? {
 		get { return nil }

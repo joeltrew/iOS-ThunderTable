@@ -367,10 +367,8 @@ open class TableViewController: UITableViewController {
         }
         
         var cell = dynamicHeightCells[identifier]
-        if cell == nil {
-            
-            let aClass = row.Cell.self
-			cell = aClass.init(style: .default, reuseIdentifier: identifier)
+        if cell == nil {            
+			cell = row.cellClass.init(style: .default, reuseIdentifier: identifier)
         }
         
         guard let _cell = cell else { return UITableViewAutomaticDimension }

@@ -22,6 +22,10 @@ extension Array : Section {
 
 extension String : Row {
 	
+	public var cellClass: UITableViewCell.Type {
+		return TableViewCell.self
+	}
+	
 	public var title: String? {
 		get { return self }
 		set {}
