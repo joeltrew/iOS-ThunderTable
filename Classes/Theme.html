@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Theme Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Theme" class="dashAnchor"></a>
+    <a title="Theme Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ThunderTable Docs</a> (45% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ThunderTable Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Theme Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ApplicationLoadingIndicatorManager.html">ApplicationLoadingIndicatorManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageController.html">ImageController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12ThunderTable12ImageRequestC">ImageRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageView.html">ImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputDatePickerRow.html">InputDatePickerRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputDatePickerViewCell.html">InputDatePickerViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSliderRow.html">InputSliderRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSliderViewCell.html">InputSliderViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSwitchRow.html">InputSwitchRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSwitchViewCell.html">InputSwitchViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTableRow.html">InputTableRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextFieldRow.html">InputTextFieldRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextFieldViewCell.html">InputTextFieldViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextViewCell.html">InputTextViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextViewRow.html">InputTextViewRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IntervalSlider.html">IntervalSlider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableImageViewCell.html">TableImageViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableRow.html">TableRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableSection.html">TableSection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewCell.html">TableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewController.html">TableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Theme.html">Theme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThemeManager.html">ThemeManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ImageControllerError.html">ImageControllerError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InputRow.html">InputRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Row.html">Row</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Section.html">Section</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Callback.html">Callback</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Theme</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Theme</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines the default Theme which can be set on <code><a href="../Classes/ThemeManager.html">ThemeManager</a></code></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Colours"></a>
+                <a name="//apple_ref/swift/Section/Colours" class="dashAnchor"></a>
+                <a href="#/Colours">
+                  <h3 class="section-name">Colours</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThunderTable@objc(cs)TSCTheme(py)mainColor"></a>
+                    <a name="//apple_ref/swift/Property/mainColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThunderTable@objc(cs)TSCTheme(py)mainColor">mainColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The main tint colour for the app. This colour is generally used as the window tint colour and for tinting any UI elements throughout the app such as images and navigation bars</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">mainColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">red</span><span class="p">:</span> <span class="mf">0.894</span><span class="p">,</span> <span class="nv">green</span><span class="p">:</span> <span class="mf">0.000</span><span class="p">,</span> <span class="nv">blue</span><span class="p">:</span> <span class="mf">0.010</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC19cellBackgroundColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/cellBackgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC19cellBackgroundColorSo7UIColorCv">cellBackgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The background colour for all table view cells throughout the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cellBackgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">white</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC14cellTitleColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/cellTitleColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC14cellTitleColorSo7UIColorCv">cellTitleColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The title colour to be used for all table view cells throughout the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cellTitleColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">black</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC15cellDetailColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/cellDetailColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC15cellDetailColorSo7UIColorCv">cellDetailColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The detail colour to be used for all table view cells throughout the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cellDetailColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">darkText</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC23cellTitleParagraphStyleSo011NSParagraphG0CSgv"></a>
+                    <a name="//apple_ref/swift/Property/cellTitleParagraphStyle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC23cellTitleParagraphStyleSo011NSParagraphG0CSgv">cellTitleParagraphStyle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The paragraph style for cell title label</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cellTitleParagraphStyle</span><span class="p">:</span> <span class="kt">NSParagraphStyle</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC24cellDetailParagraphStyleSo011NSParagraphG0CSgv"></a>
+                    <a name="//apple_ref/swift/Property/cellDetailParagraphStyle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC24cellDetailParagraphStyleSo011NSParagraphG0CSgv">cellDetailParagraphStyle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The paragraph style for cell detail label</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cellDetailParagraphStyle</span><span class="p">:</span> <span class="kt">NSParagraphStyle</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThunderTable@objc(cs)TSCTheme(py)secondaryColor"></a>
+                    <a name="//apple_ref/swift/Property/secondaryColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThunderTable@objc(cs)TSCTheme(py)secondaryColor">secondaryColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A secondary colour that compliments the main colour.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">secondaryColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">white</span><span class="p">:</span> <span class="mf">0.25</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThunderTable@objc(cs)TSCTheme(py)backgroundColor"></a>
+                    <a name="//apple_ref/swift/Property/backgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThunderTable@objc(cs)TSCTheme(py)backgroundColor">backgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour of backgrounds throughout the app, particularly in table views</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">groupTableViewBackground</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC13freeTextColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/freeTextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC13freeTextColorSo7UIColorCv">freeTextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The standard colour for free text</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">freeTextColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC15headerTextColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/headerTextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC15headerTextColorSo7UIColorCv">headerTextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour of header text in the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">headerTextColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">black</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC19tableSeperatorColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/tableSeperatorColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC19tableSeperatorColorSo7UIColorCv">tableSeperatorColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour of UITableViewCell seperators</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">tableSeperatorColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">red</span><span class="p">:</span> <span class="mf">0.78</span><span class="p">,</span> <span class="nv">green</span><span class="p">:</span> <span class="mf">0.78</span><span class="p">,</span> <span class="nv">blue</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThunderTable@objc(cs)TSCTheme(py)primaryLabelColor"></a>
+                    <a name="//apple_ref/swift/Property/primaryLabelColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThunderTable@objc(cs)TSCTheme(py)primaryLabelColor">primaryLabelColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour of the text for UILabel&rsquo;s throughout the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">primaryLabelColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">black</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThunderTable@objc(cs)TSCTheme(py)secondaryLabelColor"></a>
+                    <a name="//apple_ref/swift/Property/secondaryLabelColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThunderTable@objc(cs)TSCTheme(py)secondaryLabelColor">secondaryLabelColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour of the text for alternative UILabel&rsquo;s throughout the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">secondaryLabelColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">lightGray</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThunderTable@objc(cs)TSCTheme(py)titleTextColor"></a>
+                    <a name="//apple_ref/swift/Property/titleTextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThunderTable@objc(cs)TSCTheme(py)titleTextColor">titleTextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour to be used for title text in a UINavigationBar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">titleTextColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">black</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC21disabledCellTextColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/disabledCellTextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC21disabledCellTextColorSo7UIColorCv">disabledCellTextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour of the text label in a disabled UITableViewCell</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">disabledCellTextColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">white</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC9blueColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/blueColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC9blueColorSo7UIColorCv">blueColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A blue colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">blueColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">blue</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC10brownColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/brownColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC10brownColorSo7UIColorCv">brownColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">brownColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">brown</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC13darkBlueColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/darkBlueColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC13darkBlueColorSo7UIColorCv">darkBlueColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A dark blue colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">darkBlueColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">red</span><span class="p">:</span> <span class="mf">5.0</span><span class="o">/</span><span class="mf">255.0</span><span class="p">,</span> <span class="nv">green</span><span class="p">:</span> <span class="mf">56.0</span><span class="o">/</span><span class="mf">255.0</span><span class="p">,</span> <span class="nv">blue</span><span class="p">:</span> <span class="mf">115.0</span><span class="o">/</span><span class="mf">255.0</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC9cyanColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/cyanColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC9cyanColorSo7UIColorCv">cyanColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A cyan colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cyanColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">cyan</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC13darkGrayColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/darkGrayColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC13darkGrayColorSo7UIColorCv">darkGrayColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A dark gray colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">darkGrayColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">darkGray</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC9grayColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/grayColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC9grayColorSo7UIColorCv">grayColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A gray colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">grayColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">gray</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC10greenColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/greenColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC10greenColorSo7UIColorCv">greenColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A green colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">greenColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">green</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC14lightGrayColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/lightGrayColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC14lightGrayColorSo7UIColorCv">lightGrayColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A light gray colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">lightGrayColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">lightGray</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC12magentaColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/magentaColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC12magentaColorSo7UIColorCv">magentaColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A magenta colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">magentaColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">magenta</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC11orangeColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/orangeColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC11orangeColorSo7UIColorCv">orangeColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An orange colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">orangeColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">orange</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC11purpleColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/purpleColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC11purpleColorSo7UIColorCv">purpleColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">purpleColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">purple</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC8redColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/redColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC8redColorSo7UIColorCv">redColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A red colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">redColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">red</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC11yellowColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/yellowColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC11yellowColorSo7UIColorCv">yellowColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A yellow colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">yellowColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">yellow</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC10whiteColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/whiteColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC10whiteColorSo7UIColorCv">whiteColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A white colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">whiteColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">white</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThunderTable@objc(cs)TSCTheme(py)progressTrackTintColour"></a>
+                    <a name="//apple_ref/swift/Property/progressTrackTintColour" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThunderTable@objc(cs)TSCTheme(py)progressTrackTintColour">progressTrackTintColour</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour to be used in the track of UIProgressBar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">progressTrackTintColour</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">white</span><span class="p">:</span> <span class="mf">0.683</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThunderTable@objc(cs)TSCTheme(py)progressTintColour"></a>
+                    <a name="//apple_ref/swift/Property/progressTintColour" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThunderTable@objc(cs)TSCTheme(py)progressTintColour">progressTintColour</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour to be used for a UIProgressBar fill colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">progressTintColour</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">white</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC28navigationBarBackgroundColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/navigationBarBackgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC28navigationBarBackgroundColorSo7UIColorCv">navigationBarBackgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour to be used as the navigation bar background colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">navigationBarBackgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC22navigationBarTintColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/navigationBarTintColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC22navigationBarTintColorSo7UIColorCv">navigationBarTintColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The colour to be used as the navigation bar tint colour</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">navigationBarTintColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">white</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC9lightFontSo6UIFontC12CoreGraphics7CGFloatV6ofSize_tF"></a>
+                    <a name="//apple_ref/swift/Method/lightFont(ofSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC9lightFontSo6UIFontC12CoreGraphics7CGFloatV6ofSize_tF">lightFont(ofSize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <hr>
+
+<hr>
+
+<p>Where a lighter font is required, this method will return a light font with the given size</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">lightFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIFont</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ofSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The required font size</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A light font in the requested size</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC4fontSo6UIFontC12CoreGraphics7CGFloatV6ofSize_tF"></a>
+                    <a name="//apple_ref/swift/Method/font(ofSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC4fontSo6UIFontC12CoreGraphics7CGFloatV6ofSize_tF">font(ofSize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a font of a required size</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">font</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIFont</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ofSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The required font size</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A font in the requested size</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC10mediumFontSo6UIFontC12CoreGraphics7CGFloatV6ofSize_tF"></a>
+                    <a name="//apple_ref/swift/Method/mediumFont(ofSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC10mediumFontSo6UIFontC12CoreGraphics7CGFloatV6ofSize_tF">mediumFont(ofSize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a medium font of a required size</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">mediumFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIFont</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ofSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The required font size</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A medium font in the requested size</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC8boldFontSo6UIFontC12CoreGraphics7CGFloatV6ofSize_tF"></a>
+                    <a name="//apple_ref/swift/Method/boldFont(ofSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC8boldFontSo6UIFontC12CoreGraphics7CGFloatV6ofSize_tF">boldFont(ofSize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a bold font of a required size</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">boldFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIFont</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ofSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The required font size</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A bold font in the requested size</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC16primaryLabelFontSo6UIFontCv"></a>
+                    <a name="//apple_ref/swift/Property/primaryLabelFont" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC16primaryLabelFontSo6UIFontCv">primaryLabelFont</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The font for UILabel&rsquo;s throughout the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">primaryLabelFont</span><span class="p">:</span> <span class="kt">UIFont</span> <span class="o">=</span> <span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="kt">UIFont</span><span class="o">.</span><span class="n">systemFontSize</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC18secondaryLabelFontSo6UIFontCv"></a>
+                    <a name="//apple_ref/swift/Property/secondaryLabelFont" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC18secondaryLabelFontSo6UIFontCv">secondaryLabelFont</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The font for alternative style UILabel&rsquo;s throught the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">secondaryLabelFont</span><span class="p">:</span> <span class="kt">UIFont</span> <span class="o">=</span> <span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="kt">UIFont</span><span class="o">.</span><span class="n">systemFontSize</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC13cellTitleFontSo6UIFontCv"></a>
+                    <a name="//apple_ref/swift/Property/cellTitleFont" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC13cellTitleFontSo6UIFontCv">cellTitleFont</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The font for the title label of cells throughout the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cellTitleFont</span><span class="p">:</span> <span class="kt">UIFont</span> <span class="o">=</span> <span class="o">.</span><span class="nf">preferredFont</span><span class="p">(</span><span class="nv">forTextStyle</span><span class="p">:</span> <span class="o">.</span><span class="n">body</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable5ThemeC14cellDetailFontSo6UIFontCv"></a>
+                    <a name="//apple_ref/swift/Property/cellDetailFont" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable5ThemeC14cellDetailFontSo6UIFontCv">cellDetailFont</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The font for the detail label of cells throughout the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">cellDetailFont</span><span class="p">:</span> <span class="kt">UIFont</span> <span class="o">=</span> <span class="o">.</span><span class="nf">preferredFont</span><span class="p">(</span><span class="nv">forTextStyle</span><span class="p">:</span> <span class="o">.</span><span class="n">caption1</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://3sidedcube.com/" target="_blank" rel="external">3</a>. All rights reserved. (Last updated: 2018-02-16)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

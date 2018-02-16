@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Row Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/Row" class="dashAnchor"></a>
+    <a title="Row Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ThunderTable Docs</a> (45% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ThunderTable Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Row Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ApplicationLoadingIndicatorManager.html">ApplicationLoadingIndicatorManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageController.html">ImageController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12ThunderTable12ImageRequestC">ImageRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageView.html">ImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputDatePickerRow.html">InputDatePickerRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputDatePickerViewCell.html">InputDatePickerViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSliderRow.html">InputSliderRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSliderViewCell.html">InputSliderViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSwitchRow.html">InputSwitchRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSwitchViewCell.html">InputSwitchViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTableRow.html">InputTableRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextFieldRow.html">InputTextFieldRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextFieldViewCell.html">InputTextFieldViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextViewCell.html">InputTextViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextViewRow.html">InputTextViewRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IntervalSlider.html">IntervalSlider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableImageViewCell.html">TableImageViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableRow.html">TableRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableSection.html">TableSection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewCell.html">TableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewController.html">TableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Theme.html">Theme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThemeManager.html">ThemeManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ImageControllerError.html">ImageControllerError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InputRow.html">InputRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Row.html">Row</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Section.html">Section</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Callback.html">Callback</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Row</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Row</span></code></pre>
+
+                </div>
+              </div>
+            <p>A protocol which allows the rendering of information into a cell within
+a <code>UITableView</code> by providing a declarative view on the information to show</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP13accessoryTypeSC024UITableViewCellAccessoryE0OSgv"></a>
+                    <a name="//apple_ref/swift/Property/accessoryType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP13accessoryTypeSC024UITableViewCellAccessoryE0OSgv">accessoryType</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The accessory type to be displayed on the right of the cell for this row</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    If you wish to return <code>.none</code> from this, make sure to use the long syntax:
+<code>UITableViewCellAccessoryType.none</code> otherwise the compiler will think you are returning
+<code>Optional.none</code> which is equivalent to nil and therefore will be ignored by <code><a href="../Classes/TableViewController.html">TableViewController</a></code>
+
+</div>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">accessoryType</span><span class="p">:</span> <span class="kt">UITableViewCellAccessoryType</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP14selectionStyleSC024UITableViewCellSelectionE0OSgv"></a>
+                    <a name="//apple_ref/swift/Property/selectionStyle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP14selectionStyleSC024UITableViewCellSelectionE0OSgv">selectionStyle</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The selection style to be applied when the cell for this row is pressed down</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    If you wish to return <code>.none</code> from this, make sure to use the long syntax:
+<code>UITableViewCellSelectionStyle.none</code> otherwise the compiler will think you are returning
+<code>Optional.none</code> which is equivalent to nil and therefore will be ignored by <code><a href="../Classes/TableViewController.html">TableViewController</a></code>
+
+</div>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">selectionStyle</span><span class="p">:</span> <span class="kt">UITableViewCellSelectionStyle</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP9cellStyleSC015UITableViewCellE0OSgv"></a>
+                    <a name="//apple_ref/swift/Property/cellStyle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP9cellStyleSC015UITableViewCellE0OSgv">cellStyle</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The cell style of the cell for this row</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    This will only take affect if you directly use TableRow, or subclass <code><a href="../Classes/TableViewCell.html">TableViewCell</a></code> but don&rsquo;t use a xib based layout and return false from <code><a href="../Protocols/Row.html#/s:12ThunderTable3RowP16useNibSuperclassSbv">useNibSuperclass</a></code>.
+
+</div>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cellStyle</span><span class="p">:</span> <span class="kt">UITableViewCellStyle</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP5titleSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP5titleSSSgv">title</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string to be displayed as the title for the row</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP8subtitleSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/subtitle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP8subtitleSSSgv">subtitle</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string to be displayed as the subtitle for the row</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">subtitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP5imageSo7UIImageCSgv"></a>
+                    <a name="//apple_ref/swift/Property/image" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP5imageSo7UIImageCSgv">image</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An image to be displayed in the row</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP9imageSizeSC6CGSizeVSgv"></a>
+                    <a name="//apple_ref/swift/Property/imageSize" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP9imageSizeSC6CGSizeVSgv">imageSize</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The size of the image which will be displayed in the row</p>
+
+<p>This will be used when displaying an image using imageURL in order
+to layout the cell correctly before the image has loaded in.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">imageSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP8imageURL10Foundation0E0VSgv"></a>
+                    <a name="//apple_ref/swift/Property/imageURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP8imageURL10Foundation0E0VSgv">imageURL</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A url to load the image for the cell from</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">imageURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP14remainSelectedSbv"></a>
+                    <a name="//apple_ref/swift/Property/remainSelected" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP14remainSelectedSbv">remainSelected</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the cell should remain selected when pressed by the user</p>
+
+<p>Defaults to false</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">remainSelected</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP17displaySeparatorsSbv"></a>
+                    <a name="//apple_ref/swift/Property/displaySeparators" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP17displaySeparatorsSbv">displaySeparators</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether separators should be displayed on the cell</p>
+
+<p>Defaults to true</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">displaySeparators</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP10isEditableSbv"></a>
+                    <a name="//apple_ref/swift/Property/isEditable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP10isEditableSbv">isEditable</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the row is editable (Shows delete/actions) on cell swipe</p>
+
+<p>Defaults to false</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isEditable</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP9cellClassyXlXpSgv"></a>
+                    <a name="//apple_ref/swift/Property/cellClass" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP9cellClassyXlXpSgv">cellClass</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The class for the <code>UITableViewCell</code> subclass for the cell</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cellClass</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP19prototypeIdentifierSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/prototypeIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP19prototypeIdentifierSSSgv">prototypeIdentifier</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A prototype identifier for a cell which is defined in a storyboard
+file, which this row will use</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">prototypeIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP16selectionHandleryAaB_p_Sb10Foundation9IndexPathVSo11UITableViewCtcSgv"></a>
+                    <a name="//apple_ref/swift/Property/selectionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP16selectionHandleryAaB_p_Sb10Foundation9IndexPathVSo11UITableViewCtcSgv">selectionHandler</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A closure which will be called when the row is pressed on in the table view</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">selectionHandler</span><span class="p">:</span> <span class="kt">SelectionHandler</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP11editHandleryAaB_p_SC27UITableViewCellEditingStyleO10Foundation9IndexPathVSo0fG0CtcSgv"></a>
+                    <a name="//apple_ref/swift/Property/editHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP11editHandleryAaB_p_SC27UITableViewCellEditingStyleO10Foundation9IndexPathVSo0fG0CtcSgv">editHandler</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A closure which will be called when the row is edited in the table view</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">editHandler</span><span class="p">:</span> <span class="kt">EditHandler</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP15estimatedHeight12CoreGraphics7CGFloatVSgv"></a>
+                    <a name="//apple_ref/swift/Property/estimatedHeight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP15estimatedHeight12CoreGraphics7CGFloatVSgv">estimatedHeight</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The estimated height of the row</p>
+
+<p>Defaults to nil, this is ignored by cells which are layed out
+using interface builder</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">estimatedHeight</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP7padding12CoreGraphics7CGFloatVSgv"></a>
+                    <a name="//apple_ref/swift/Property/padding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP7padding12CoreGraphics7CGFloatVSgv">padding</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Padding to apply to the edges of the row</p>
+
+<p>This is ignored by cells which are layed out
+using interface builder</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">padding</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP16useNibSuperclassSbv"></a>
+                    <a name="//apple_ref/swift/Property/useNibSuperclass" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP16useNibSuperclassSbv">useNibSuperclass</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether if no nib was found with the same file name as <code><a href="../Protocols/Row.html#/s:12ThunderTable3RowP9cellClassyXlXpSgv">cellClass</a></code>
+(expected behaviour is to name your cell&rsquo;s xib the same file name as the 
+class you return from <code><a href="../Protocols/Row.html#/s:12ThunderTable3RowP9cellClassyXlXpSgv">cellClass</a></code>), we should then find a xib for a
+superclass of <code><a href="../Protocols/Row.html#/s:12ThunderTable3RowP9cellClassyXlXpSgv">cellClass</a></code></p>
+
+<p>Defaults to true, meaning all cells without their own xib will use
+a superclasses xib to layout, this will eventually come across the base
+cell class <code><a href="../Classes/TableViewCell.html">TableViewCell</a></code> so if you wish to have a none Interface Builder
+row, then make sure to return false from this, or subclass from UITableViewCell rather than TableViewCell!</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">useNibSuperclass</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP9configureySo15UITableViewCellC4cell_10Foundation9IndexPathV2atAA0bF10ControllerC2intF"></a>
+                    <a name="//apple_ref/swift/Method/configure(cell:at:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP9configureySo15UITableViewCellC4cell_10Foundation9IndexPathV2atAA0bF10ControllerC2intF">configure(cell:at:in:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A function which will be called in <code>cellForRow:atIndexPath</code> delegate 
+method which can be used to provide custom overrides on your cell from
+the row controlling it</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="nv">cell</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> <span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">,</span> <span class="k">in</span> <span class="nv">tableViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/TableViewController.html">TableViewController</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cell</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The cell which needs configuring</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index path which that cell is at</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tableViewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The table view controller which the cell is in</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable3RowP6height12CoreGraphics7CGFloatVSgSC6CGSizeV13constrainedTo_So11UITableViewC2intF"></a>
+                    <a name="//apple_ref/swift/Method/height(constrainedTo:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable3RowP6height12CoreGraphics7CGFloatVSgSC6CGSizeV13constrainedTo_So11UITableViewC2intF">height(constrainedTo:in:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A function which allows providing a manual height for a cell not layed
+out using Interface Builder</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">height</span><span class="p">(</span><span class="n">constrainedTo</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="k">in</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>size</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size which the row has available to it</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tableView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The table view which the row will be displayed in</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The height (or nil, to have this ignored) the row should be displayed at</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://3sidedcube.com/" target="_blank" rel="external">3</a>. All rights reserved. (Last updated: 2018-02-16)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

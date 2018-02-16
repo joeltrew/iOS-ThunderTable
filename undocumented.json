@@ -1,0 +1,1188 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/ApplicationLoadingIndicatorManager.swift",
+      "line": 11,
+      "symbol": "ApplicationLoadingIndicatorManager",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/ApplicationLoadingIndicatorManager.swift",
+      "line": 13,
+      "symbol": "ApplicationLoadingIndicatorManager.sharedManager",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/ApplicationLoadingIndicatorManager.swift",
+      "line": 16,
+      "symbol": "ApplicationLoadingIndicatorManager.showActivityIndicator()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/ApplicationLoadingIndicatorManager.swift",
+      "line": 26,
+      "symbol": "ApplicationLoadingIndicatorManager.hideActivityIndicator()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/Extensions.swift",
+      "line": 13,
+      "symbol": "Array.rows",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/Extensions.swift",
+      "line": 22,
+      "symbol": "Array.editHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/ImageController.swift",
+      "line": 97,
+      "symbol": "ImageControllerError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/ImageController.swift",
+      "line": 98,
+      "symbol": "ImageControllerError.loadFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/ImageController.swift",
+      "line": 99,
+      "symbol": "ImageControllerError.invalidData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/ImageView.swift",
+      "line": 32,
+      "symbol": "ImageView.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputDatePickerRow.swift",
+      "line": 60,
+      "symbol": "InputDatePickerRow.cellClass",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputDatePickerRow.swift",
+      "line": 64,
+      "symbol": "InputDatePickerRow.configure(cell:at:in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputDatePickerRow.swift",
+      "line": 96,
+      "symbol": "InputDatePickerRow.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputDatePickerViewCell.swift",
+      "line": 11,
+      "symbol": "InputDatePickerViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputDatePickerViewCell.swift",
+      "line": 13,
+      "symbol": "InputDatePickerViewCell.textField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputDatePickerViewCell.swift",
+      "line": 15,
+      "symbol": "InputDatePickerViewCell.datePicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputDatePickerViewCell.swift",
+      "line": 19,
+      "symbol": "InputDatePickerViewCell.becomeFirstResponder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputDatePickerViewCell.swift",
+      "line": 23,
+      "symbol": "InputDatePickerViewCell.resignFirstResponder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputDatePickerViewCell.swift",
+      "line": 27,
+      "symbol": "InputDatePickerViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSliderRow.swift",
+      "line": 19,
+      "symbol": "InputSliderRow.cellClass",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSliderRow.swift",
+      "line": 23,
+      "symbol": "InputSliderRow.minValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSliderRow.swift",
+      "line": 25,
+      "symbol": "InputSliderRow.maxValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSliderRow.swift",
+      "line": 27,
+      "symbol": "InputSliderRow.interval",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSliderRow.swift",
+      "line": 29,
+      "symbol": "InputSliderRow.init(title:minValue:maxValue:id:required:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSliderRow.swift",
+      "line": 40,
+      "symbol": "InputSliderRow.configure(cell:at:in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSliderViewCell.swift",
+      "line": 90,
+      "symbol": "InputSliderViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSliderViewCell.swift",
+      "line": 92,
+      "symbol": "InputSliderViewCell.valueLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSliderViewCell.swift",
+      "line": 94,
+      "symbol": "InputSliderViewCell.slider",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSliderViewCell.swift",
+      "line": 96,
+      "symbol": "InputSliderViewCell.updateLabel(sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSwitchRow.swift",
+      "line": 11,
+      "symbol": "InputSwitchRow",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSwitchRow.swift",
+      "line": 13,
+      "symbol": "InputSwitchRow.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSwitchRow.swift",
+      "line": 15,
+      "symbol": "InputSwitchRow.isUserInteractionEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSwitchRow.swift",
+      "line": 17,
+      "symbol": "InputSwitchRow.cellClass",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSwitchRow.swift",
+      "line": 21,
+      "symbol": "InputSwitchRow.init(title:subtitle:id:image:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSwitchRow.swift",
+      "line": 30,
+      "symbol": "InputSwitchRow.configure(cell:at:in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSwitchViewCell.swift",
+      "line": 11,
+      "symbol": "InputSwitchViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputSwitchViewCell.swift",
+      "line": 13,
+      "symbol": "InputSwitchViewCell.switch",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTableRow.swift",
+      "line": 37,
+      "symbol": "Callback",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTableRow.swift",
+      "line": 39,
+      "symbol": "Callback.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTableRow.swift",
+      "line": 41,
+      "symbol": "Callback.callback",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTableRow.swift",
+      "line": 43,
+      "symbol": "Callback.init(identifier:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTableRow.swift",
+      "line": 50,
+      "symbol": "InputTableRow",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTableRow.swift",
+      "line": 104,
+      "symbol": "InputTableRow.nextHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTableRow.swift",
+      "line": 134,
+      "symbol": "InputTableRow.init(id:required:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTableRow.swift",
+      "line": 147,
+      "symbol": "InputTableRow.add(callback:for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTableRow.swift",
+      "line": 164,
+      "symbol": "InputTableRow.remove(callback:for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTableRow.swift",
+      "line": 185,
+      "symbol": "InputTableRow.callbacks(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": null,
+      "symbol": "InputTextFieldRow",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 11,
+      "symbol": "InputTextFieldRow",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 13,
+      "symbol": "InputTextFieldRow.placeholder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 15,
+      "symbol": "InputTextFieldRow.keyboardType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 17,
+      "symbol": "InputTextFieldRow.returnKeyType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 19,
+      "symbol": "InputTextFieldRow.allowCharacterHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 21,
+      "symbol": "InputTextFieldRow.isSecure",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 23,
+      "symbol": "InputTextFieldRow.autocorrectionType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 25,
+      "symbol": "InputTextFieldRow.autocapitalizationType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 27,
+      "symbol": "InputTextFieldRow.cellClass",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 31,
+      "symbol": "InputTextFieldRow.init(title:placeholder:id:required:keyboardType:returnKeyType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 43,
+      "symbol": "InputTextFieldRow.configure(cell:at:in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 75,
+      "symbol": "InputTextFieldRow.textField(_:shouldChangeCharactersIn:replacementString:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldRow.swift",
+      "line": 90,
+      "symbol": "InputTextFieldRow.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldViewCell.swift",
+      "line": 11,
+      "symbol": "InputTextFieldViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldViewCell.swift",
+      "line": 13,
+      "symbol": "InputTextFieldViewCell.textField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldViewCell.swift",
+      "line": 15,
+      "symbol": "InputTextFieldViewCell.becomeFirstResponder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextFieldViewCell.swift",
+      "line": 19,
+      "symbol": "InputTextFieldViewCell.resignFirstResponder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewCell.swift",
+      "line": 11,
+      "symbol": "InputTextViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewCell.swift",
+      "line": 13,
+      "symbol": "InputTextViewCell.textView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewCell.swift",
+      "line": 15,
+      "symbol": "InputTextViewCell.textViewHeightConstraint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewCell.swift",
+      "line": 17,
+      "symbol": "InputTextViewCell.becomeFirstResponder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewCell.swift",
+      "line": 21,
+      "symbol": "InputTextViewCell.resignFirstResponder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": null,
+      "symbol": "InputTextViewRow",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 9,
+      "symbol": "InputTextViewRow",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 11,
+      "symbol": "InputTextViewRow.placeholder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 13,
+      "symbol": "InputTextViewRow.keyboardType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 15,
+      "symbol": "InputTextViewRow.returnKeyType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 17,
+      "symbol": "InputTextViewRow.autocorrectionType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 19,
+      "symbol": "InputTextViewRow.autocapitalizationType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 21,
+      "symbol": "InputTextViewRow.textViewHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 23,
+      "symbol": "InputTextViewRow.isSecure",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 25,
+      "symbol": "InputTextViewRow.cellClass",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 29,
+      "symbol": "InputTextViewRow.init(title:placeholder:id:required:keyboardType:returnKeyType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 41,
+      "symbol": "InputTextViewRow.configure(cell:at:in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 78,
+      "symbol": "InputTextViewRow.textViewDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 97,
+      "symbol": "InputTextViewRow.textViewDidEndEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/InputTextViewRow.swift",
+      "line": 105,
+      "symbol": "InputTextViewRow.textViewDidChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableImageViewCell.swift",
+      "line": 11,
+      "symbol": "TableImageViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableImageViewCell.swift",
+      "line": 13,
+      "symbol": "TableImageViewCell.imageHeightConstraint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableImageViewCell.swift",
+      "line": 15,
+      "symbol": "TableImageViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 123,
+      "symbol": "Row.accessoryType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 128,
+      "symbol": "Row.selectionStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 133,
+      "symbol": "Row.displaySeparators",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 138,
+      "symbol": "Row.isEditable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 143,
+      "symbol": "Row.cellStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 148,
+      "symbol": "Row.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 153,
+      "symbol": "Row.subtitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 158,
+      "symbol": "Row.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 163,
+      "symbol": "Row.imageURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 168,
+      "symbol": "Row.imageSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 172,
+      "symbol": "Row.remainSelected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 176,
+      "symbol": "Row.cellClass",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 180,
+      "symbol": "Row.prototypeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 184,
+      "symbol": "Row.selectionHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 189,
+      "symbol": "Row.editHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 194,
+      "symbol": "Row.useNibSuperclass",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 198,
+      "symbol": "Row.estimatedHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 202,
+      "symbol": "Row.padding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 228,
+      "symbol": "TableRow.titleTextColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 230,
+      "symbol": "TableRow.subtitleTextColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableRow.swift",
+      "line": 307,
+      "symbol": "TableRow.init(title:subtitle:image:selectionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": null,
+      "symbol": "Section",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 15,
+      "symbol": "Section",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 17,
+      "symbol": "Section.rows",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 19,
+      "symbol": "Section.header",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 21,
+      "symbol": "Section.footer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 23,
+      "symbol": "Section.editHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 25,
+      "symbol": "Section.selectionHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 30,
+      "symbol": "Section.rows",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 37,
+      "symbol": "Section.header",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 44,
+      "symbol": "Section.footer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 51,
+      "symbol": "Section.selectionHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 59,
+      "symbol": "TableSection",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 61,
+      "symbol": "TableSection.header",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 63,
+      "symbol": "TableSection.footer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 65,
+      "symbol": "TableSection.rows",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 67,
+      "symbol": "TableSection.selectionHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 69,
+      "symbol": "TableSection.editHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableSection.swift",
+      "line": 71,
+      "symbol": "TableSection.init(rows:header:footer:selectionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 11,
+      "symbol": "TableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 13,
+      "symbol": "TableViewCell.cellImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 15,
+      "symbol": "TableViewCell.cellTextLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 17,
+      "symbol": "TableViewCell.cellDetailLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 21,
+      "symbol": "TableViewCell.cellStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 23,
+      "symbol": "TableViewCell.shouldDisplaySeparators",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 37,
+      "symbol": "TableViewCell.init(style:reuseIdentifier:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 65,
+      "symbol": "TableViewCell.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 69,
+      "symbol": "TableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 82,
+      "symbol": "TableViewCell.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewCell.swift",
+      "line": 191,
+      "symbol": "TableViewCell.addSubview(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": null,
+      "symbol": "TableViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 108,
+      "symbol": "TableViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 110,
+      "symbol": "TableViewController.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 116,
+      "symbol": "TableViewController.selectedIndexPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 118,
+      "symbol": "TableViewController.selectedRows",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 124,
+      "symbol": "TableViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 133,
+      "symbol": "TableViewController.shouldRedrawWithContentSizeChange",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 135,
+      "symbol": "TableViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 145,
+      "symbol": "TableViewController.viewWillDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 151,
+      "symbol": "TableViewController.inputDictionary",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 164,
+      "symbol": "TableViewController.missingRequiredInputRows",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 177,
+      "symbol": "TableViewController.configure(cell:with:at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 258,
+      "symbol": "TableViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 263,
+      "symbol": "TableViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 271,
+      "symbol": "TableViewController.tableView(_:canEditRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 276,
+      "symbol": "TableViewController.tableView(_:commit:forRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 289,
+      "symbol": "TableViewController.tableView(_:editActionsForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 295,
+      "symbol": "TableViewController.tableView(_:leadingSwipeActionsConfigurationForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 301,
+      "symbol": "TableViewController.tableView(_:trailingSwipeActionsConfigurationForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 306,
+      "symbol": "TableViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 337,
+      "symbol": "TableViewController.tableView(_:estimatedHeightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 350,
+      "symbol": "TableViewController.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 418,
+      "symbol": "TableViewController.tableView(_:titleForHeaderInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 424,
+      "symbol": "TableViewController.tableView(_:titleForFooterInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 432,
+      "symbol": "TableViewController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 438,
+      "symbol": "TableViewController.tableView(_:didDeselectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 449,
+      "symbol": "TableViewController.sizeHeaderToFit()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 461,
+      "symbol": "TableViewController.sizeFooterToFit()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/TableViewController.swift",
+      "line": 532,
+      "symbol": "TableViewController.moveToInputCell(after:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/Theme.swift",
+      "line": 76,
+      "symbol": "Theme.brownColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable/ThunderTable/Theme.swift",
+      "line": 103,
+      "symbol": "Theme.purpleColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/matthewcheetham/Local iOS/iOS-Storm-Demo/Thunder Cloud/ThunderTable"
+}

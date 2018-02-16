@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TableSection Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/TableSection" class="dashAnchor"></a>
+    <a title="TableSection Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ThunderTable Docs</a> (45% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ThunderTable Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TableSection Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ApplicationLoadingIndicatorManager.html">ApplicationLoadingIndicatorManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageController.html">ImageController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12ThunderTable12ImageRequestC">ImageRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageView.html">ImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputDatePickerRow.html">InputDatePickerRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputDatePickerViewCell.html">InputDatePickerViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSliderRow.html">InputSliderRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSliderViewCell.html">InputSliderViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSwitchRow.html">InputSwitchRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputSwitchViewCell.html">InputSwitchViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTableRow.html">InputTableRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextFieldRow.html">InputTextFieldRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextFieldViewCell.html">InputTextFieldViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextViewCell.html">InputTextViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextViewRow.html">InputTextViewRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IntervalSlider.html">IntervalSlider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableImageViewCell.html">TableImageViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableRow.html">TableRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableSection.html">TableSection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewCell.html">TableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewController.html">TableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Theme.html">Theme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThemeManager.html">ThemeManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ImageControllerError.html">ImageControllerError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InputRow.html">InputRow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Row.html">Row</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Section.html">Section</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Callback.html">Callback</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TableSection</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">TableSection</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Section.html">Section</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable0B7SectionC6headerSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/header" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable0B7SectionC6headerSSSgv">header</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">header</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable0B7SectionC6footerSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/footer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable0B7SectionC6footerSSSgv">footer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">footer</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable0B7SectionC4rowsSayAA3Row_pGv"></a>
+                    <a name="//apple_ref/swift/Property/rows" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable0B7SectionC4rowsSayAA3Row_pGv">rows</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">rows</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/Row.html">Row</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable0B7SectionC16selectionHandleryAA3Row_p_Sb10Foundation9IndexPathVSo11UITableViewCtcSgv"></a>
+                    <a name="//apple_ref/swift/Property/selectionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable0B7SectionC16selectionHandleryAA3Row_p_Sb10Foundation9IndexPathVSo11UITableViewCtcSgv">selectionHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">selectionHandler</span><span class="p">:</span> <span class="kt">SelectionHandler</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable0B7SectionC11editHandleryAA3Row_p_SC27UITableViewCellEditingStyleO10Foundation9IndexPathVSo0gH0CtcSgv"></a>
+                    <a name="//apple_ref/swift/Property/editHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable0B7SectionC11editHandleryAA3Row_p_SC27UITableViewCellEditingStyleO10Foundation9IndexPathVSo0gH0CtcSgv">editHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">editHandler</span><span class="p">:</span> <span class="kt">EditHandler</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable0B7SectionCACSayAA3Row_pG4rows_SSSg6headerAG6footeryAaD_p_Sb10Foundation9IndexPathVSo11UITableViewCtcSg16selectionHandlertcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(rows:header:footer:selectionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable0B7SectionCACSayAA3Row_pG4rows_SSSg6headerAG6footeryAaD_p_Sb10Foundation9IndexPathVSo11UITableViewCtcSg16selectionHandlertcfc">init(rows:header:footer:selectionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">rows</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/Row.html">Row</a></span><span class="p">],</span> <span class="nv">header</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">footer</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">selectionHandler</span><span class="p">:</span> <span class="kt">SelectionHandler</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable0B7SectionC14sortedSectionsSayACGSayAA3Row_pG4with_yAaF_p_Sb10Foundation9IndexPathVSo11UITableViewCtcSg16selectionHandlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/sortedSections(with:selectionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable0B7SectionC14sortedSectionsSayACGSayAA3Row_pG4with_yAaF_p_Sb10Foundation9IndexPathVSo11UITableViewCtcSg16selectionHandlertFZ">sortedSections(with:selectionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array of <code>TableSection</code> objects sorted by first letter of the row&rsquo;s title</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">sortedSections</span><span class="p">(</span><span class="n">with</span> <span class="nv">rows</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/Row.html">Row</a></span><span class="p">],</span> <span class="nv">selectionHandler</span><span class="p">:</span> <span class="kt">SelectionHandler</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">TableSection</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rows</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The rows to sort into alphabetised sections</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selectionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A selection handler to add to the sections</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of <code>TableSection</code> objects</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://3sidedcube.com/" target="_blank" rel="external">3</a>. All rights reserved. (Last updated: 2018-02-16)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

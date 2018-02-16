@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ThunderTable  Reference</title>
+    <title>Structures  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,7 +10,7 @@
     
   </head>
   <body>
-    <a title="ThunderTable  Reference"></a>
+    <a title="Structures  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">ThunderTable Docs</a> (45% documented)</p>
@@ -20,7 +20,7 @@
       <p id="breadcrumbs">
         <a href="index.html">ThunderTable Reference</a>
         <img id="carat" src="img/carat.png" />
-        ThunderTable  Reference
+        Structures  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -149,59 +149,43 @@
       <article class="main-content">
         <section>
           <section class="section">
-            
-            <h1 id='thunder-table' class='heading'>Thunder Table</h1>
+            <h1>Structures</h1>
+            <p>The following structures are available globally.</p>
 
-<p><a href="https://travis-ci.org/3sidedcube/iOS-ThunderTable"><img src="https://travis-ci.org/3sidedcube/iOS-ThunderTable.svg" alt="Build Status"></a></p>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12ThunderTable8CallbackV"></a>
+                    <a name="//apple_ref/swift/Struct/Callback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12ThunderTable8CallbackV">Callback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
 
-<p>Thunder Table is a useful framework which enables quick and easy creation of table views in iOS, making the process of creating complex tables as simple as a few lines of code; and removing the necessity for having long chains of index paths and if statements.</p>
-<h2 id='how-it-works' class='heading'>How It Works</h2>
+                        <a href="Structs/Callback.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Callback</span></code></pre>
 
-<p>Thunder table comprises of two main types of objects:</p>
-<h3 id='rows' class='heading'>Rows</h3>
-
-<p>Table rows are objects that conform to the <code><a href="Protocols/Row.html">Row</a></code> protocol, this protocol has properties such as: title, subtitle and image which are responsible for providing the content to a table view cell. As this is a protocol any object can conform to it, which allows you to simply send an array of model objects to the table view to display your content.</p>
-<h3 id='sections' class='heading'>Sections</h3>
-
-<p>Table sections are objects that conform to the <code><a href="Protocols/Section.html">Section</a></code> protocol, most of the time you won&rsquo;t need to implement this protocol yourself as Thunder Table has a convenience class <code><a href="Classes/TableSection.html">TableSection</a></code> which can be used in most circumstances. However you can implement more complex layouts using this protocol on your own classes.</p>
-<h1 id='installation' class='heading'>Installation</h1>
-
-<p>Setting up your app to use Thunder Table is a simple.</p>
-
-<ul>
-<li>Drag ThunderTable.xcodeproj</li>
-<li>Add ThunderTable.framework to your Embedded Binaries.</li>
-<li>Wherever you want to use ThunderTable use <code>import ThunderTable</code></li>
-</ul>
-<h1 id='code-example' class='heading'>Code Example</h1>
-<h2 id='a-simple-table-view-controller' class='heading'>A Simple Table View Controller</h2>
-
-<p>Setting up a table view is massively simplified using thunder table, in fact, we can get a simple table view running with just a few lines of code. To create a custom table view we subclass from <code><a href="Classes/TableViewController.html">TableViewController</a></code>. We then set up our table in the <code>viewDidLoad:</code> method. Below is the full code for a table view that displays one row, with text, a subtitle, image and handles table selection by pushing another view.</p>
-<pre class="highlight plaintext"><code>import ThunderTable
-
-class MyTableViewController: TableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let imageRow = TableRow(title: "Settings", subtitle: "Configure your settings", image: UIImage(named: "settings-cog")) { (row, selected, indexPath, tableView) -&gt; (Void) in
-
-            let settings = SettingsViewController()
-            self.showDetailViewController(settings, sender: self)
-        }
-
-        let section = TableSection(rows: [imageRow])
-        data = [section]
-    }
-}
-</code></pre>
-<h1 id='code-level-documentation' class='heading'>Code level documentation</h1>
-
-<p>Documentation is available for the entire library in AppleDoc format. This is available in the framework itself or in the <a href="http://3sidedcube.github.io/iOS-ThunderTable/">Hosted Version</a></p>
-<h1 id='license' class='heading'>License</h1>
-
-<p>See <a href="LICENSE.md">LICENSE.md</a></p>
-
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">
