@@ -8,12 +8,12 @@
 
 import UIKit
 
-public class ApplicationLoadingIndicatorManager: NSObject {
+@objc public class ApplicationLoadingIndicatorManager: NSObject {
     
-    public static let sharedManager = ApplicationLoadingIndicatorManager()
+    @objc public static let sharedManager = ApplicationLoadingIndicatorManager()
     private var activityCount = 0
         
-    public func showActivityIndicator() {
+    @objc public func showActivityIndicator() {
         
         objc_sync_enter(self)
         if activityCount == 0 {
@@ -23,7 +23,7 @@ public class ApplicationLoadingIndicatorManager: NSObject {
         objc_sync_exit(self)
     }
     
-    public func hideActivityIndicator() {
+    @objc public func hideActivityIndicator() {
         
         objc_sync_enter(self)
         activityCount -= 1
