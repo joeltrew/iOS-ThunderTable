@@ -107,9 +107,15 @@ extension Row {
 @objc(TSCTableViewController)
 open class TableViewController: UITableViewController {
     
-    open var data: [Section] = [] {
-        didSet {
+    private var _data: [Section] = []
+    
+    open var data: [Section] {
+        set {
+            _data = newValue
             tableView.reloadData()
+        }
+        get {
+            return _data
         }
     }
 	
@@ -117,7 +123,7 @@ open class TableViewController: UITableViewController {
 	
 	public var selectedRows: [Row]? {
 		return tableView.indexPathsForSelectedRows?.map({ (indexPath) -> Row in
-			return data[indexPath.section].rows[indexPath.row]
+			return _data[indexPath.section].rows[indexPath.row]
 		})
 	}
     
@@ -130,7 +136,7 @@ open class TableViewController: UITableViewController {
     
     public var inputDictionary: [String: Any?]? {
         
-        guard let inputRows = data.flatMap({ $0.rows.filter({ $0 as? InputRow != nil }) }) as? [InputRow] else { return nil }
+        guard let inputRows = _data.flatMap({ $0.rows.filter({ $0 as? InputRow != nil }) }) as? [InputRow] else { return nil }
         
         var dictionary: [String: Any?] = [:]
         
@@ -143,7 +149,7 @@ open class TableViewController: UITableViewController {
 	
 	public var missingRequiredInputRows: [InputRow]? {
 		
-		guard let inputRows = data.flatMap({ $0.rows.filter({ $0 as? InputRow != nil }) }) as? [InputRow] else { return nil }
+		guard let inputRows = _data.flatMap({ $0.rows.filter({ $0 as? InputRow != nil }) }) as? [InputRow] else { return nil }
 		
 		return inputRows.filter({ (inputRow) -> Bool in
 			return inputRow.required && inputRow.value == nil
@@ -235,21 +241,21 @@ open class TableViewController: UITableViewController {
 
     override open func numberOfSections(in tableView: UITableView) -> Int {
         
-        return data.count
+        return _data.count
     }
 
     override open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if section - 1 > data.count { return 0 }
+        if section - 1 > _data.count { return 0 }
         
-        let section = data[section]
+        let section = _data[section]
         return section.rows.count
     }
 
     
     override open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let row = data[indexPath.section].rows[indexPath.row]
+        let row = _data[indexPath.section].rows[indexPath.row]
         
         var identifier: String = "Cell"
         
@@ -280,7 +286,7 @@ open class TableViewController: UITableViewController {
     
     override open func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        let row = data[indexPath.section].rows[indexPath.row]
+        let row = _data[indexPath.section].rows[indexPath.row]
         
         if let estimatedHeight = row.estimatedHeight {
             return estimatedHeight
@@ -293,7 +299,7 @@ open class TableViewController: UITableViewController {
     
     override open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        let row = data[indexPath.section].rows[indexPath.row]
+        let row = _data[indexPath.section].rows[indexPath.row]
         
         // If they're using prototype cells or nibs then we don't want to manually calculate size
         let calculateSize = row.prototypeIdentifier == nil && row.nib == nil
@@ -397,13 +403,13 @@ open class TableViewController: UITableViewController {
 	
 	override open func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		
-		let section = data[section]
+		let section = _data[section]
 		return section.header
 	}
 	
 	override open func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
 		
-		let section = data[section]
+		let section = _data[section]
 		return section.footer
 	}
 
@@ -478,7 +484,7 @@ public extension TableViewController {
 	
     internal func selectable(_ indexPath: IndexPath) -> Bool {
 		
-        let section = data[indexPath.section]
+        let section = _data[indexPath.section]
         let row = section.rows[indexPath.row]
         
         return row.selectionHandler != nil || section.selectionHandler != nil || (row as? InputRow) != nil || !row.remainSelected
@@ -486,7 +492,7 @@ public extension TableViewController {
     
     internal func set(indexPath: IndexPath, selected: Bool) {
         
-        let section = data[indexPath.section]
+        let section = _data[indexPath.section]
         let row = section.rows[indexPath.row]
         
         // Row selection overrides section selection
