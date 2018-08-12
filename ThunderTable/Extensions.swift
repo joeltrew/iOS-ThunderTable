@@ -6,7 +6,7 @@
 //  Copyright © 2017 3SidedCube. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension Array : Section {
     
@@ -54,9 +54,36 @@ extension Double: PickerRowDisplayable {
     }
 }
 
-extension String : Row {
+extension String: Row {
     
     public var title: String? {
         return self
+    }
+}
+
+extension UIImage: Row {
+    
+    public var image: UIImage? {
+        get {
+            return self
+        }
+        set { }
+    }
+    
+    public var accessoryType: UITableViewCellAccessoryType? {
+        return UITableViewCellAccessoryType.none
+    }
+    
+    public var cellClass: UITableViewCell.Type? {
+        return TableImageViewCell.self
+    }
+    
+    public func configure(cell: UITableViewCell, at indexPath: IndexPath, in tableViewController: TableViewController) {
+        
+        guard let imageViewCell = cell as? TableImageViewCell else { return }
+        
+        let aspectRatio = size.height/size.width
+        
+        imageViewCell.imageHeightConstraint.constant = aspectRatio * tableViewController.tableView.bounds.width
     }
 }
