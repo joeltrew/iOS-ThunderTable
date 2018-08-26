@@ -77,7 +77,7 @@ open class InputTextViewRow: InputTableRow {
 
 extension InputTextViewRow: UITextViewDelegate {
     
-    public func textViewDidBeginEditing(_ textView: UITextView) {
+    open func textViewDidBeginEditing(_ textView: UITextView) {
         
         if let stringValue = value as? String {
             
@@ -96,7 +96,7 @@ extension InputTextViewRow: UITextViewDelegate {
         }
     }
     
-    public func textViewDidEndEditing(_ textView: UITextView) {
+    open func textViewDidEndEditing(_ textView: UITextView) {
         
         if textView.text.isEmpty {
             textView.text = placeholder
@@ -104,7 +104,7 @@ extension InputTextViewRow: UITextViewDelegate {
         }
     }
     
-    public func textViewDidChange(_ textView: UITextView) {
+    open func textViewDidChange(_ textView: UITextView) {
         set(value: textView.text, sender: nil)
     }
 }
