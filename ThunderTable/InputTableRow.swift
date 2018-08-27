@@ -120,7 +120,7 @@ open class InputTableRow: NSObject, InputRow {
         }
     }
     
-    public func set(value: Any?, sender: UIControl?) {
+    open func set(value: Any?, sender: UIControl?) {
         
         let events = UIControlEvents.valueChanged
         self.value = value
