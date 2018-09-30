@@ -70,8 +70,8 @@ extension UIImage: Row {
         set { }
     }
     
-    public var accessoryType: UITableViewCellAccessoryType? {
-        return UITableViewCellAccessoryType.none
+    public var accessoryType: UITableViewCell.AccessoryType? {
+        return UITableViewCell.AccessoryType.none
     }
     
     public var cellClass: UITableViewCell.Type? {
