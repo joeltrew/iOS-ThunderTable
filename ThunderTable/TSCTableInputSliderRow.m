@@ -48,6 +48,7 @@
     inputCell.slider.minimumValue = [self.sliderMinValue floatValue];
     inputCell.slider.maximumValue = [self.sliderMaxValue floatValue];
 	[inputCell.slider setValue:[self.currentValue floatValue] animated:YES];
+    [inputCell setInputRow:self];
 	
 	NSString *stringValue = self.formatter ? [self.formatter stringForObjectValue:@(self.currentValue.floatValue ?: inputCell.slider.value)] : [NSString stringWithFormat:@"%.1f", self.currentValue.floatValue ?: inputCell.slider.value];
 	
