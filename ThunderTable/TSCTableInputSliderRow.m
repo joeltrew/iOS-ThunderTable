@@ -28,6 +28,7 @@
     row.sliderMinValue = minValue;
     row.sliderMaxValue = maxValue;
     row.currentValue = currentValue;
+    row.value = currentValue;
     
     return row;
 }
