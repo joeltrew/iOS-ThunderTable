@@ -54,7 +54,9 @@ open class InputDatePickerRow: InputTableRow {
 		case .countDownTimer:
 			dateFormatter.dateFormat = "'Every' HH 'hours' mm 'minutes'"
 			break
-		}
+        @unknown default:
+            break
+        }
 	}
 	
 	open override var cellClass: UITableViewCell.Type? {
